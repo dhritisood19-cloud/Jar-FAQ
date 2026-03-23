@@ -16,6 +16,8 @@ import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined";
 import SendOutlinedIcon from "@mui/icons-material/SendOutlined";
 import DiamondOutlinedIcon from "@mui/icons-material/DiamondOutlined";
 import ReportProblemOutlinedIcon from "@mui/icons-material/ReportProblemOutlined";
+import LocalShippingOutlinedIcon from "@mui/icons-material/LocalShippingOutlined";
+import SupportAgentOutlinedIcon from "@mui/icons-material/SupportAgentOutlined";
 
 const iconMap: Record<string, React.ReactNode> = {
   jar: <SavingsOutlinedIcon sx={{ fontSize: 32, color: "#7C3AED" }} />,
@@ -34,6 +36,8 @@ const iconMap: Record<string, React.ReactNode> = {
   "jar-pay": <SendOutlinedIcon sx={{ fontSize: 32, color: "#2563EB" }} />,
   nek: <DiamondOutlinedIcon sx={{ fontSize: 32, color: "#EC4899" }} />,
   "report-fraud": <ReportProblemOutlinedIcon sx={{ fontSize: 32, color: "#DC2626" }} />,
+  "nek-delivery": <LocalShippingOutlinedIcon sx={{ fontSize: 32, color: "#F97316" }} />,
+  "upi-help": <SupportAgentOutlinedIcon sx={{ fontSize: 32, color: "#0EA5E9" }} />,
 };
 
 export default function CategoryIcon({ categoryId, size = 32 }: { categoryId: string; size?: number }) {

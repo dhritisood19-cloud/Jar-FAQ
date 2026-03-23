@@ -40,32 +40,23 @@ export default function TroubleshootingEntry() {
       {/* Header */}
       <button
         onClick={() => setExpanded(!expanded)}
-        className="w-full p-5 text-left"
+        className="w-full flex items-center gap-3 px-5 py-4 text-left"
       >
-        <div className="flex items-start gap-3">
-          <span className="relative flex h-2.5 w-2.5 flex-shrink-0 mt-1.5">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" />
-            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-500" />
-          </span>
-          <div className="flex-1 min-w-0">
-            <p className="text-base font-bold text-gray-800 leading-snug">
-              {transactions.length} transactions need<br className="sm:hidden" /> your attention
-            </p>
-            <p className="text-xs text-gray-400 mt-1">
-              Issues detected in your recent activity
-            </p>
-            <div className="flex items-center gap-2 mt-3">
-              <span className="inline-flex items-center gap-1.5 px-5 py-2 rounded-full bg-red-600 text-white text-xs font-semibold shadow-sm">
-                <BuildIcon sx={{ fontSize: 14 }} />
-                Troubleshoot
-              </span>
-              <KeyboardArrowDownIcon
-                sx={{ fontSize: 22, color: "#9CA3AF" }}
-                className={`transition-transform ${expanded ? "rotate-180" : ""}`}
-              />
-            </div>
-          </div>
-        </div>
+        <span className="relative flex h-2 w-2 flex-shrink-0">
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" />
+          <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500" />
+        </span>
+        <p className="flex-1 text-sm font-semibold text-gray-800">
+          {transactions.length} transactions need attention
+        </p>
+        <span className="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-red-600 text-white text-[11px] font-semibold flex-shrink-0">
+          <BuildIcon sx={{ fontSize: 12 }} />
+          Troubleshoot
+        </span>
+        <KeyboardArrowDownIcon
+          sx={{ fontSize: 18, color: "#9CA3AF" }}
+          className={`transition-transform flex-shrink-0 ${expanded ? "rotate-180" : ""}`}
+        />
       </button>
 
       {/* Expandable transaction list */}

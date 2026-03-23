@@ -3,11 +3,23 @@ import SearchBar from "./components/SearchBar";
 import VideoCarousel from "./components/VideoCarousel";
 import ContactSupport from "./components/ContactSupport";
 import TroubleshootingEntry from "./components/TroubleshootingEntry";
-import { faqData, topFAQs } from "./data/faqData";
-import { ChevronRightIcon } from "./components/Icons";
+import TopIssues from "./components/TopIssues";
+import { faqData } from "./data/faqData";
 import CategoryIcon from "./components/CategoryIcon";
 
+const browseTopicIds = [
+  "kyc", "upi-id", "payments-savings", "autopay-subscription",
+  "withdrawal", "refer-earn", "rewards", "profile", "nominee",
+];
+
+const browseProductIds = [
+  "jar", "jar-gold", "jar-silver", "loans", "nek", "jar-pay",
+];
+
 export default function Home() {
+  const browseTopics = faqData.filter((cat) => browseTopicIds.includes(cat.id));
+  const browseProducts = faqData.filter((cat) => browseProductIds.includes(cat.id));
+
   return (
     <main className="flex-1">
       {/* Hero + Search */}
@@ -31,8 +43,8 @@ export default function Home() {
         {/* Browse Topics */}
         <section className="pt-2">
           <h2 className="text-lg font-bold text-gray-900 mb-4">Browse Topics</h2>
-          <div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-            {faqData.map((cat) => (
+          <div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+            {browseTopics.map((cat) => (
               <Link
                 key={cat.id}
                 href={`/category/${cat.id}`}
@@ -42,26 +54,50 @@ export default function Home() {
                 <p className="text-sm font-semibold text-gray-800">{cat.faqCategory}</p>
               </Link>
             ))}
+            <Link
+              href="/category/nek/sub/tracking-delivery"
+              className="glass-card flex flex-col items-center p-5 rounded-2xl text-center transition-all cursor-pointer"
+            >
+              <div className="mb-3"><CategoryIcon categoryId="nek-delivery" /></div>
+              <p className="text-sm font-semibold text-gray-800">Nek Delivery</p>
+            </Link>
+            <a
+              href="https://www.upihelp.npci.org.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glass-card flex flex-col items-center p-5 rounded-2xl text-center transition-all cursor-pointer"
+            >
+              <div className="mb-3"><CategoryIcon categoryId="upi-help" /></div>
+              <p className="text-sm font-semibold text-gray-800">UPI Help</p>
+            </a>
+            <Link
+              href="/category/report-fraud"
+              className="glass-card flex flex-col items-center p-5 rounded-2xl text-center transition-all cursor-pointer"
+            >
+              <div className="mb-3"><CategoryIcon categoryId="report-fraud" /></div>
+              <p className="text-sm font-semibold text-gray-800">Report Fraud</p>
+            </Link>
           </div>
         </section>
 
         {/* Top Issues */}
         <section>
           <h2 className="text-lg font-bold text-gray-900 mb-4">Top Issues</h2>
-          <div className="space-y-2">
-            {topFAQs.map((faq, i) => (
+          <TopIssues />
+        </section>
+
+        {/* Browse Products */}
+        <section>
+          <h2 className="text-lg font-bold text-gray-900 mb-4">Browse Products</h2>
+          <div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+            {browseProducts.map((cat) => (
               <Link
-                key={i}
-                href={`/category/${faq.categoryId}/${faq.questionId}`}
-                className="flex items-center justify-between p-4 rounded-2xl bg-white border border-gray-100 hover:border-violet-200 hover:shadow-sm transition-all group"
+                key={cat.id}
+                href={`/category/${cat.id}`}
+                className="glass-card flex flex-col items-center p-5 rounded-2xl text-center transition-all cursor-pointer"
               >
-                <div className="flex items-start gap-3 flex-1 min-w-0">
-                  <span className="text-xs font-bold px-2 py-1 rounded-lg flex-shrink-0 bg-violet-100 text-violet-600">
-                    {i + 1}
-                  </span>
-                  <p className="text-sm font-medium text-gray-800 line-clamp-2 min-w-0">{faq.title}</p>
-                </div>
-                <ChevronRightIcon sx={{ fontSize: 20, color: "#9CA3AF" }} className="flex-shrink-0 ml-2 group-hover:translate-x-1 transition-transform" />
+                <div className="mb-3"><CategoryIcon categoryId={cat.id} /></div>
+                <p className="text-sm font-semibold text-gray-800">{cat.faqCategory}</p>
               </Link>
             ))}
           </div>
