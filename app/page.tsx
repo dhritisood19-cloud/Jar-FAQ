@@ -36,12 +36,14 @@ export default function Home() {
             How can we <span className="text-violet-600">help</span> you?
           </h1>
           <SearchBar placeholder="Search for questions, topics, or keywords..." />
+          <div className="mt-4"><TroubleshootingEntry /></div>
         </div>
       </section>
 
       <div className="max-w-5xl mx-auto px-4 pb-12 space-y-10">
+
         {/* Browse Topics */}
-        <section className="pt-2">
+        <section>
           <h2 className="text-lg font-bold text-gray-900 mb-4">Browse Topics</h2>
           <div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-5 gap-3">
             {browseTopics.map((cat) => (
@@ -102,9 +104,6 @@ export default function Home() {
             ))}
           </div>
         </section>
-
-        {/* Troubleshooting */}
-        <section><TroubleshootingEntry /></section>
 
         {/* Contact Support */}
         <section>
