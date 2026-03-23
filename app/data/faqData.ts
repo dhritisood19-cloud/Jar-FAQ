@@ -1167,7 +1167,7 @@ export const faqData: FAQCategory[] = [
   },
   {
     id: "payments-savings",
-    faqCategory: "Payments/Savings",
+    faqCategory: "Payments/ Savings",
     faqPageHeader: "Payments & Statements",
     icon: "📱",
     subcategories: [
@@ -1292,7 +1292,7 @@ export const faqData: FAQCategory[] = [
   },
   {
     id: "autopay-subscription",
-    faqCategory: "AutoPay/Subscription",
+    faqCategory: "AutoPay/ Subscription",
     faqPageHeader: "Managing your subscriptions",
     icon: "🔄",
     subcategories: [
@@ -2488,16 +2488,10 @@ export const topFAQs = [
     label: "Withdrawal",
   },
   {
-    title: "UPI name mismatch error",
+    title: "Unable to add new UPI ID getting name mismatch error",
     categoryId: "upi-id",
     questionId: "name-mismatch-upi",
     label: "UPI ID",
-  },
-  {
-    title: "Amount deducted but not in Locker",
-    categoryId: "payments-savings",
-    questionId: "gold-purchase-pending",
-    label: "Savings",
   },
   {
     title: "Referral reward not credited",
@@ -2510,6 +2504,12 @@ export const topFAQs = [
     categoryId: "kyc",
     questionId: "kyc-failing-multiple-attempts",
     label: "KYC",
+  },
+  {
+    title: "Amount deducted but not added to Jar Locker",
+    categoryId: "payments-savings",
+    questionId: "gold-purchase-pending",
+    label: "Savings",
   },
 ];
 

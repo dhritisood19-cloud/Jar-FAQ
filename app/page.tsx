@@ -11,21 +11,18 @@ export default function Home() {
   return (
     <main className="flex-1">
       {/* Hero + Search */}
-      <section className="relative py-12 px-4 bg-gradient-to-br from-violet-50 via-white to-blue-50">
+      <section className="relative py-4 px-4 bg-gradient-to-br from-violet-50 via-white to-blue-50">
         <div className="overflow-hidden absolute inset-0 pointer-events-none">
           <div className="orb-1" />
           <div className="orb-2" />
         </div>
         <div className="max-w-2xl mx-auto text-center relative z-10">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold mb-4 bg-violet-100 text-violet-600 border border-violet-200">
+          <div className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold mb-2 text-violet-600 bg-violet-100 border-glow">
             need help?
           </div>
-          <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
+          <h1 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">
             How can we <span className="text-violet-600">help</span> you?
           </h1>
-          <p className="text-sm mb-6 text-gray-500">
-            Search our FAQs or browse categories below
-          </p>
           <SearchBar placeholder="Search for questions, topics, or keywords..." />
         </div>
       </section>
@@ -34,7 +31,7 @@ export default function Home() {
         {/* Browse Topics */}
         <section className="pt-2">
           <h2 className="text-lg font-bold text-gray-900 mb-4">Browse Topics</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+          <div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-4 gap-3">
             {faqData.map((cat) => (
               <Link
                 key={cat.id}
@@ -62,10 +59,7 @@ export default function Home() {
                   <span className="text-xs font-bold px-2 py-1 rounded-lg flex-shrink-0 bg-violet-100 text-violet-600">
                     {i + 1}
                   </span>
-                  <div className="min-w-0">
-                    <p className="text-sm font-medium text-gray-800 line-clamp-2">{faq.title}</p>
-                    <span className="text-xs mt-0.5 inline-block text-gray-400">{faq.label}</span>
-                  </div>
+                  <p className="text-sm font-medium text-gray-800 line-clamp-2 min-w-0">{faq.title}</p>
                 </div>
                 <ChevronRightIcon sx={{ fontSize: 20, color: "#9CA3AF" }} className="flex-shrink-0 ml-2 group-hover:translate-x-1 transition-transform" />
               </Link>

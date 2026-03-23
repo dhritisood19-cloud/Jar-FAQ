@@ -32,9 +32,6 @@ export default async function CategoryPage({
             <CategoryIcon categoryId={category.id} />
             <div>
               <h1 className="text-xl sm:text-2xl font-bold text-gray-900">{category.faqPageHeader}</h1>
-              <p className="text-sm mt-0.5 text-gray-500">
-                {category.subcategories.reduce((s, sub) => s + sub.questions.length, 0)} articles
-              </p>
             </div>
           </div>
           <SearchBar compact placeholder={`Search in ${category.faqCategory}...`} />
@@ -55,16 +52,15 @@ export default async function CategoryPage({
                 </h3>
                 <ChevronRightIcon sx={{ fontSize: 18, color: "#9CA3AF" }} className="group-hover:translate-x-1 transition-transform" />
               </div>
-              <p className="text-xs mb-3 text-gray-400">{sub.questions.length} questions</p>
               <div className="space-y-1.5">
-                {sub.questions.slice(0, 3).map((q) => (
+                {sub.questions.slice(0, 2).map((q) => (
                   <div key={q.id} className="flex items-start gap-2">
                     <div className="w-1 h-1 rounded-full mt-1.5 flex-shrink-0 bg-violet-300" />
                     <p className="text-xs text-gray-500 line-clamp-1">{q.question}</p>
                   </div>
                 ))}
-                {sub.questions.length > 3 && (
-                  <p className="text-xs font-medium text-violet-500">+{sub.questions.length - 3} more</p>
+                {sub.questions.length > 2 && (
+                  <p className="text-xs font-medium text-violet-500">+{sub.questions.length - 2} more</p>
                 )}
               </div>
             </Link>
