@@ -29,7 +29,7 @@ export default function TopIssues() {
       {topFAQs.length > 3 && (
         <button
           onClick={() => setShowAll(!showAll)}
-          className="text-sm font-medium text-violet-600 hover:text-violet-700 transition-colors pt-1"
+          className="text-sm font-medium text-violet-600 hover:text-violet-700 transition-colors pt-1 w-full text-center"
         >
           {showAll ? "Show less" : `View more (+${topFAQs.length - 3})`}
         </button>
