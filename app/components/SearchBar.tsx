@@ -2,6 +2,8 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import SearchIcon from "@mui/icons-material/Search";
+import CloseIcon from "@mui/icons-material/Close";
 import { searchQuestions } from "../data/faqData";
 
 export default function SearchBar({
@@ -20,8 +22,7 @@ export default function SearchBar({
 
   useEffect(() => {
     if (query.trim().length >= 2) {
-      const r = searchQuestions(query);
-      setResults(r);
+      setResults(searchQuestions(query));
       setIsOpen(true);
     } else {
       setResults([]);
@@ -31,9 +32,7 @@ export default function SearchBar({
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
-      if (wrapperRef.current && !wrapperRef.current.contains(e.target as Node)) {
-        setIsOpen(false);
-      }
+      if (wrapperRef.current && !wrapperRef.current.contains(e.target as Node)) setIsOpen(false);
     }
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
@@ -41,27 +40,8 @@ export default function SearchBar({
 
   return (
     <div ref={wrapperRef} className="relative w-full">
-      <div
-        className={`flex items-center rounded-2xl transition-all ${compact ? "px-3 py-2" : "px-5 py-3.5"}`}
-        style={{
-          background: "rgba(91, 58, 158, 0.15)",
-          border: "1px solid rgba(91, 58, 158, 0.3)",
-        }}
-      >
-        <svg
-          width={compact ? "18" : "20"}
-          height={compact ? "18" : "20"}
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#7E57C2"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          className="flex-shrink-0"
-        >
-          <circle cx="11" cy="11" r="8" />
-          <line x1="21" y1="21" x2="16.65" y2="16.65" />
-        </svg>
+      <div className={`flex items-center rounded-2xl bg-gray-50 border border-gray-200 focus-within:border-violet-400 focus-within:shadow-md transition-all ${compact ? "px-3 py-2" : "px-5 py-3.5"}`}>
+        <SearchIcon sx={{ fontSize: compact ? 20 : 22, color: "#9CA3AF" }} />
         <input
           type="text"
           value={query}
@@ -69,39 +49,27 @@ export default function SearchBar({
           onFocus={() => query.trim().length >= 2 && setIsOpen(true)}
           placeholder={placeholder}
           autoFocus={autoFocus}
-          className={`flex-1 ml-3 outline-none bg-transparent ${compact ? "text-sm" : "text-base"}`}
-          style={{ color: "#F0E6FF" }}
+          className={`flex-1 ml-3 outline-none bg-transparent text-gray-800 placeholder-gray-400 ${compact ? "text-sm" : "text-base"}`}
         />
         {query && (
-          <button
-            onClick={() => { setQuery(""); setIsOpen(false); }}
-            className="p-1 transition-colors"
-            style={{ color: "#7E57C2" }}
-          >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" />
-            </svg>
+          <button onClick={() => { setQuery(""); setIsOpen(false); }} className="p-1 text-gray-400 hover:text-gray-600">
+            <CloseIcon sx={{ fontSize: 18 }} />
           </button>
         )}
       </div>
 
       {isOpen && results.length > 0 && (
-        <div className="absolute top-full left-0 right-0 mt-2 rounded-2xl shadow-2xl max-h-[400px] overflow-y-auto z-50" style={{ background: "#1A0E2E", border: "1px solid rgba(91, 58, 158, 0.3)" }}>
+        <div className="absolute top-full left-0 right-0 mt-2 rounded-2xl shadow-xl max-h-[400px] overflow-y-auto z-50 bg-white border border-gray-100">
           <div className="p-2">
             {results.map((item) => (
               <Link
                 key={item.id}
                 href={`/category/${item.categoryId}/${item.id}`}
                 onClick={() => setIsOpen(false)}
-                className="block px-4 py-3 rounded-xl transition-colors"
-                style={{ color: "#F0E6FF" }}
-                onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(91, 58, 158, 0.2)")}
-                onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}
+                className="block px-4 py-3 rounded-xl hover:bg-gray-50 transition-colors"
               >
-                <p className="text-sm font-medium line-clamp-2">{item.question}</p>
-                <p className="text-xs mt-1" style={{ color: "rgba(179, 157, 219, 0.6)" }}>
-                  {item.categoryName} &rsaquo; {item.subcategoryName}
-                </p>
+                <p className="text-sm font-medium text-gray-800 line-clamp-2">{item.question}</p>
+                <p className="text-xs text-gray-400 mt-1">{item.categoryName} &rsaquo; {item.subcategoryName}</p>
               </Link>
             ))}
           </div>
@@ -109,9 +77,9 @@ export default function SearchBar({
       )}
 
       {isOpen && query.trim().length >= 2 && results.length === 0 && (
-        <div className="absolute top-full left-0 right-0 mt-2 rounded-2xl shadow-2xl z-50 p-6 text-center" style={{ background: "#1A0E2E", border: "1px solid rgba(91, 58, 158, 0.3)" }}>
-          <p className="text-sm" style={{ color: "#B39DDB" }}>No results found for &ldquo;{query}&rdquo;</p>
-          <p className="text-xs mt-1" style={{ color: "rgba(179, 157, 219, 0.5)" }}>Try different keywords or browse categories</p>
+        <div className="absolute top-full left-0 right-0 mt-2 rounded-2xl shadow-xl z-50 p-6 text-center bg-white border border-gray-100">
+          <p className="text-sm text-gray-500">No results found for &ldquo;{query}&rdquo;</p>
+          <p className="text-xs text-gray-400 mt-1">Try different keywords or browse categories</p>
         </div>
       )}
     </div>

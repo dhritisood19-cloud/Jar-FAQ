@@ -2,6 +2,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { faqData, findCategoryById } from "../../data/faqData";
 import SearchBar from "../../components/SearchBar";
+import { ChevronRightIcon } from "../../components/Icons";
+import CategoryIcon from "../../components/CategoryIcon";
 
 export function generateStaticParams() {
   return faqData.map((cat) => ({ categorySlug: cat.id }));
@@ -18,20 +20,19 @@ export default async function CategoryPage({
 
   return (
     <main className="flex-1">
-      {/* Header */}
-      <div className="relative py-8 px-4 overflow-hidden">
+      <div className="relative py-8 px-4 overflow-hidden bg-gradient-to-br from-violet-50 via-white to-blue-50">
         <div className="orb-1" />
         <div className="max-w-4xl mx-auto relative z-10">
-          <nav className="flex items-center gap-2 text-sm mb-5" style={{ color: "rgba(179, 157, 219, 0.5)" }}>
-            <Link href="/" className="hover:text-white transition-colors">Home</Link>
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="9 18 15 12 9 6" /></svg>
-            <span className="text-white font-medium">{category.faqCategory}</span>
+          <nav className="flex items-center gap-1 text-sm mb-5 text-gray-400">
+            <Link href="/" className="hover:text-violet-600 transition-colors">Home</Link>
+            <ChevronRightIcon sx={{ fontSize: 16 }} />
+            <span className="text-gray-700 font-medium">{category.faqCategory}</span>
           </nav>
           <div className="flex items-center gap-3 mb-5">
-            <span className="text-3xl">{category.icon}</span>
+            <CategoryIcon categoryId={category.id} />
             <div>
-              <h1 className="text-xl sm:text-2xl font-bold text-white">{category.faqPageHeader}</h1>
-              <p className="text-sm mt-0.5" style={{ color: "#B39DDB" }}>
+              <h1 className="text-xl sm:text-2xl font-bold text-gray-900">{category.faqPageHeader}</h1>
+              <p className="text-sm mt-0.5 text-gray-500">
                 {category.subcategories.reduce((s, sub) => s + sub.questions.length, 0)} articles
               </p>
             </div>
@@ -40,7 +41,6 @@ export default async function CategoryPage({
         </div>
       </div>
 
-      {/* Bento Grid of Subcategories */}
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {category.subcategories.map((sub) => (
@@ -50,29 +50,21 @@ export default async function CategoryPage({
               className="glass-card rounded-2xl p-5 transition-all cursor-pointer group"
             >
               <div className="flex items-center justify-between mb-3">
-                <h3 className="text-sm font-bold text-white group-hover:text-[#FFD600] transition-colors">
+                <h3 className="text-sm font-bold text-gray-800 group-hover:text-violet-600 transition-colors">
                   {sub.name}
                 </h3>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7E57C2" strokeWidth="2" className="group-hover:translate-x-1 transition-transform">
-                  <polyline points="9 18 15 12 9 6" />
-                </svg>
+                <ChevronRightIcon sx={{ fontSize: 18, color: "#9CA3AF" }} className="group-hover:translate-x-1 transition-transform" />
               </div>
-              <p className="text-xs mb-3" style={{ color: "rgba(179, 157, 219, 0.6)" }}>
-                {sub.questions.length} questions
-              </p>
+              <p className="text-xs mb-3 text-gray-400">{sub.questions.length} questions</p>
               <div className="space-y-1.5">
                 {sub.questions.slice(0, 3).map((q) => (
                   <div key={q.id} className="flex items-start gap-2">
-                    <div className="w-1 h-1 rounded-full mt-1.5 flex-shrink-0" style={{ background: "#7E57C2" }} />
-                    <p className="text-xs line-clamp-1" style={{ color: "#B39DDB" }}>
-                      {q.question}
-                    </p>
+                    <div className="w-1 h-1 rounded-full mt-1.5 flex-shrink-0 bg-violet-300" />
+                    <p className="text-xs text-gray-500 line-clamp-1">{q.question}</p>
                   </div>
                 ))}
                 {sub.questions.length > 3 && (
-                  <p className="text-xs font-medium" style={{ color: "rgba(255, 214, 0, 0.6)" }}>
-                    +{sub.questions.length - 3} more
-                  </p>
+                  <p className="text-xs font-medium text-violet-500">+{sub.questions.length - 3} more</p>
                 )}
               </div>
             </Link>

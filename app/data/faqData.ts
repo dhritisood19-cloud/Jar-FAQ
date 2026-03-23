@@ -25,7 +25,7 @@ export interface FAQCategory {
 export const faqData: FAQCategory[] = [
   {
     id: "jar",
-    faqCategory: "Jar",
+    faqCategory: "About Jar",
     faqPageHeader: "Know About Jar",
     icon: "💰",
     subcategories: [
@@ -1012,7 +1012,7 @@ export const faqData: FAQCategory[] = [
   },
   {
     id: "upi-id",
-    faqCategory: "UPI ID",
+    faqCategory: "UPI ID/VPA",
     faqPageHeader: "Managing Your UPI IDs",
     icon: "💳",
     subcategories: [
@@ -2441,46 +2441,75 @@ export const faqData: FAQCategory[] = [
       },
     ],
   },
+  {
+    id: "report-fraud",
+    faqCategory: "Report a Fraud",
+    faqPageHeader: "Report a Fraud",
+    icon: "🚨",
+    subcategories: [
+      {
+        id: "fraud-reporting",
+        name: "Fraud Reporting",
+        questions: [
+          {
+            id: "report-fraud-upi",
+            question:
+              "What should I do if the Primary UPI ID shown on my account is not recognized by me?",
+            answer:
+              "If you don't recognize the Primary UPI ID on your account, please contact support immediately and report it through the fraud reporting flow.",
+            supportActionable: "Support Required",
+          },
+          {
+            id: "report-unauthorized-transaction",
+            question: "I see an unauthorized transaction on my account. What should I do?",
+            answer:
+              "If you notice any unauthorized transaction, please contact our support team immediately. Do not share your OTP, PIN, or password with anyone. Our team will investigate and help secure your account.",
+            supportActionable: "Support Required",
+          },
+          {
+            id: "report-suspicious-activity",
+            question: "How do I report suspicious activity on my Jar account?",
+            answer:
+              "If you notice any suspicious activity on your account, please reach out to our support team immediately through the app or contact us directly. We take fraud very seriously and will investigate promptly to protect your account.",
+            supportActionable: "Support Required",
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 // Top FAQ entries
 export const topFAQs = [
   {
-    title: "Withdrawal pending or failed — amount not received in bank",
+    title: "Withdrawal not received in bank",
     categoryId: "withdrawal",
     questionId: "gold-withdrawal-in-progress",
     label: "Withdrawal",
   },
   {
-    title: "Unable to add new UPI ID for payments. Getting name mismatch error",
+    title: "UPI name mismatch error",
     categoryId: "upi-id",
     questionId: "name-mismatch-upi",
     label: "UPI ID",
   },
   {
-    title: "Amount deducted from my bank, but not reflecting in my Jar Locker?",
+    title: "Amount deducted but not in Locker",
     categoryId: "payments-savings",
     questionId: "gold-purchase-pending",
     label: "Savings",
   },
   {
-    title: "Referral reward not received or not credited",
+    title: "Referral reward not credited",
     categoryId: "refer-earn",
     questionId: "referral-reward-not-received",
     label: "Refer and Earn",
   },
   {
-    title:
-      "KYC verification failed, why? KYC verification stuck in Pending, how much time to update?",
+    title: "KYC verification failed or stuck",
     categoryId: "kyc",
     questionId: "kyc-failing-multiple-attempts",
     label: "KYC",
-  },
-  {
-    title: "Want to report Fraud. What do I do?",
-    categoryId: "upi-id",
-    questionId: "primary-upi-not-recognized",
-    label: "Safety",
   },
 ];
 
