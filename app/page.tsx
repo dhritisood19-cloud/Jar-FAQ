@@ -53,7 +53,7 @@ export default function Home() {
                 className="glass-card flex flex-col items-center p-5 rounded-2xl text-center transition-all cursor-pointer"
               >
                 <div className="mb-3"><CategoryIcon categoryId={cat.id} /></div>
-                <p className="text-sm font-semibold text-gray-800">{cat.faqCategory}</p>
+                <p className="text-xs font-semibold text-gray-800 leading-tight">{cat.faqCategory}</p>
               </Link>
             ))}
             <Link
@@ -61,7 +61,7 @@ export default function Home() {
               className="glass-card flex flex-col items-center p-5 rounded-2xl text-center transition-all cursor-pointer"
             >
               <div className="mb-3"><CategoryIcon categoryId="nek-delivery" /></div>
-              <p className="text-sm font-semibold text-gray-800">Nek Delivery</p>
+              <p className="text-xs font-semibold text-gray-800 leading-tight">Nek Delivery</p>
             </Link>
             <a
               href="https://www.upihelp.npci.org.in/"
@@ -70,14 +70,14 @@ export default function Home() {
               className="glass-card flex flex-col items-center p-5 rounded-2xl text-center transition-all cursor-pointer"
             >
               <div className="mb-3"><CategoryIcon categoryId="upi-help" /></div>
-              <p className="text-sm font-semibold text-gray-800">UPI Help</p>
+              <p className="text-xs font-semibold text-gray-800 leading-tight">UPI Help</p>
             </a>
             <Link
               href="/category/report-fraud"
               className="glass-card flex flex-col items-center p-5 rounded-2xl text-center transition-all cursor-pointer"
             >
               <div className="mb-3"><CategoryIcon categoryId="report-fraud" /></div>
-              <p className="text-sm font-semibold text-gray-800">Report Fraud</p>
+              <p className="text-xs font-semibold text-gray-800 leading-tight">Report Fraud</p>
             </Link>
           </div>
         </section>
@@ -99,7 +99,7 @@ export default function Home() {
                 className="glass-card flex flex-col items-center p-5 rounded-2xl text-center transition-all cursor-pointer"
               >
                 <div className="mb-3"><CategoryIcon categoryId={cat.id} /></div>
-                <p className="text-sm font-semibold text-gray-800">{cat.faqCategory}</p>
+                <p className="text-xs font-semibold text-gray-800 leading-tight">{cat.faqCategory}</p>
               </Link>
             ))}
           </div>

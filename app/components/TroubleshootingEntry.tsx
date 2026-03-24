@@ -11,7 +11,7 @@ const transactions = [
     type: "Withdrawal",
     status: "PENDING",
     statusColor: "bg-orange-100 text-orange-600",
-    date: "16 Feb '26 · 04:20am · HDFC ···9034",
+    date: "16 Feb '26 · 04:20am",
     link: "/category/withdrawal/gold-withdrawal-in-progress",
   },
   {
@@ -19,7 +19,7 @@ const transactions = [
     type: "Week Saving",
     status: "FAILED",
     statusColor: "bg-red-100 text-red-600",
-    date: "15 Feb '26 · 05:10am · Auto-deduct",
+    date: "15 Feb '26 · 05:10am",
     link: "/category/payments-savings/gold-purchase-pending",
   },
   {
@@ -27,7 +27,7 @@ const transactions = [
     type: "Withdrawal",
     status: "PENDING",
     statusColor: "bg-orange-100 text-orange-600",
-    date: "14 Feb '26 · 04:10am · SBI ···4821",
+    date: "14 Feb '26 · 04:10am",
     link: "/category/withdrawal/gold-withdrawal-in-progress",
   },
 ];
@@ -67,16 +67,14 @@ export default function TroubleshootingEntry() {
               key={i}
               className={`flex items-center gap-3 px-5 py-4 ${i < transactions.length - 1 ? "border-b border-red-100" : ""}`}
             >
-              <div className="flex-1 min-w-0">
-                <p className="text-sm font-bold text-gray-800">
+              <div className="flex items-center gap-2 flex-1 min-w-0 flex-wrap">
+                <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded flex-shrink-0 ${tx.statusColor}`}>
+                  {tx.status}
+                </span>
+                <span className="text-sm font-bold text-gray-800 flex-shrink-0">
                   {tx.amount} {tx.type}
-                </p>
-                <div className="flex items-center gap-2 mt-1">
-                  <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded ${tx.statusColor}`}>
-                    {tx.status}
-                  </span>
-                  <span className="text-xs text-gray-400">{tx.date}</span>
-                </div>
+                </span>
+                <span className="text-xs text-gray-400 flex-shrink-0">{tx.date}</span>
               </div>
               <Link
                 href={tx.link}

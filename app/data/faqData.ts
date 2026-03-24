@@ -1517,13 +1517,13 @@ export const faqData: FAQCategory[] = [
   },
   {
     id: "refer-earn",
-    faqCategory: "Refer and Earn",
-    faqPageHeader: "Refer and Earn",
+    faqCategory: "Refer & Earn",
+    faqPageHeader: "Refer & Earn",
     icon: "🎁",
     subcategories: [
       {
         id: "refer-earn-general",
-        name: "Refer and Earn",
+        name: "Refer & Earn",
         questions: [
           {
             id: "how-receive-rewards",
@@ -2497,7 +2497,7 @@ export const topFAQs = [
     title: "Referral reward not credited",
     categoryId: "refer-earn",
     questionId: "referral-reward-not-received",
-    label: "Refer and Earn",
+    label: "Refer & Earn",
   },
   {
     title: "KYC verification failed or stuck",
