@@ -888,7 +888,7 @@ export const faqData: FAQCategory[] = [
   },
   {
     id: "kyc",
-    faqCategory: "KYC",
+    faqCategory: "ID Verification",
     faqPageHeader: "ID Verification",
     icon: "🪪",
     subcategories: [
