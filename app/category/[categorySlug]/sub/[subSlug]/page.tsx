@@ -69,6 +69,33 @@ export default async function SubCategoryPage({
           </Link>
         ))}
       </div>
+
+      {/* Other subcategories */}
+      {category.subcategories.length > 1 && (
+        <div className="max-w-3xl mx-auto px-4 pb-8">
+          <div className="rounded-2xl bg-gradient-to-br from-violet-50 to-blue-50 p-5">
+            <h2 className="text-sm font-bold text-gray-800 mb-3">More in {category.faqCategory}</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+              {category.subcategories
+                .filter((s) => s.id !== subcategory.id)
+                .map((s) => (
+                  <Link
+                    key={s.id}
+                    href={`/category/${category.id}/sub/${s.id}`}
+                    className="flex items-center gap-3 p-3 rounded-xl bg-white/80 hover:bg-white hover:shadow-sm transition-all group"
+                  >
+                    <div className="flex-1 min-w-0">
+                      <p className="text-xs font-semibold text-gray-800 group-hover:text-violet-600 transition-colors">{s.name}</p>
+                      <p className="text-[10px] text-gray-400 mt-0.5">{s.questions.length} questions</p>
+                    </div>
+                    <ChevronRightIcon sx={{ fontSize: 16, color: "#9CA3AF" }} className="flex-shrink-0 group-hover:translate-x-0.5 transition-transform" />
+                  </Link>
+                ))}
+            </div>
+          </div>
+        </div>
+      )}
+
     </main>
   );
 }
