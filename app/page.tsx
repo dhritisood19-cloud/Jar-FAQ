@@ -6,6 +6,7 @@ import TroubleshootingEntry from "./components/TroubleshootingEntry";
 import TopIssues from "./components/TopIssues";
 import { faqData } from "./data/faqData";
 import CategoryIcon from "./components/CategoryIcon";
+import TrustSection from "./components/TrustSection";
 
 const browseTopicIds = [
   "kyc", "upi-id", "payments-savings", "autopay-subscription",
@@ -36,11 +37,13 @@ export default function Home() {
             How can we <span className="text-violet-600">help</span> you?
           </h1>
           <SearchBar placeholder="Search for questions, topics, or keywords..." />
-          <div className="mt-4"><TroubleshootingEntry /></div>
         </div>
       </section>
 
       <div className="max-w-5xl mx-auto px-4 pb-12 space-y-10">
+
+        {/* Trust Section */}
+        <TrustSection />
 
         {/* Browse Topics */}
         <section>
@@ -103,6 +106,11 @@ export default function Home() {
               </Link>
             ))}
           </div>
+        </section>
+
+        {/* Troubleshooting */}
+        <section>
+          <TroubleshootingEntry />
         </section>
 
         {/* Contact Support */}
