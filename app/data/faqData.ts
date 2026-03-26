@@ -338,7 +338,7 @@ export const faqData: FAQCategory[] = [
             id: "change-daily-savings-amount",
             question: "Can I change/edit my active Daily Savings amount?",
             answer:
-              "Yes, you can change your Daily Savings amount. Go to the Savings section, select your active Daily Savings plan, and modify the amount as needed.",
+              "Yes, you can change your Daily Savings amount:\n\n1. Open your Jar App.\n2. Tap on the **Profile icon** at the top left corner.\n3. Scroll down to the **Jar Gold** section. All active plans will be displayed here, with **Active** highlighted in green.\n4. Tap on the **Active Plan** to view details.\n5. Tap on the **option** to Increase Savings. Enter the amount you want to update.\n\nYour updated savings amount will apply from the next scheduled debit.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -346,7 +346,7 @@ export const faqData: FAQCategory[] = [
             id: "pause-daily-savings",
             question: "How do I Pause my Daily Savings Plan?",
             answer:
-              "You can pause your Daily Savings Plan from the Savings section in the Jar app. Select your active plan and choose the Pause option.",
+              "To pause your Daily Savings Plan:\n\n1. Open your Jar App.\n2. Tap on the **Profile** icon at the top left corner.\n3. Scroll down to the **Jar Gold** section. All active plans will be displayed here, with **Active** highlighted in green.\n4. Tap on the **Active Plan** to view details.\n5. Scroll down and tap on **Manage Savings**.\n6. Select **Pause** to temporarily stop your daily debits.\n\nYou can resume your plan anytime from the same section.",
             supportActionable: "In App Redirection",
             faqContent: "Text Suffices",
             deeplink: "https://www.myjar.app/",
@@ -355,7 +355,7 @@ export const faqData: FAQCategory[] = [
             id: "stop-daily-savings",
             question: "How do I Stop my Daily Savings Plan?",
             answer:
-              "You can stop your Daily Savings Plan from the Savings section in the Jar app. Select your active plan and choose the Stop option.",
+              "To stop your Daily Savings Plan:\n\n1. Open your Jar App.\n2. Tap on the **Profile icon** at the top left corner.\n3. Scroll down to the **Jar Gold** section. All active plans will be displayed here, with **Active** highlighted in green.\n4. Tap on the **Active Plan** to view details.\n5. Scroll down and tap on **Manage Savings**.\n6. Select **Stop** and then confirm by tapping **Stop Savings**.\n\nNote: You can also stop a Paused Plan from the same section.",
             supportActionable: "In App Redirection",
             faqContent: "Text Suffices",
             deeplink: "https://www.myjar.app/",
@@ -395,7 +395,7 @@ export const faqData: FAQCategory[] = [
             id: "how-setup-weekly-savings",
             question: "How do I set up Weekly Savings?",
             answer:
-              "You can set up Weekly Savings directly in the Jar app. Go to the Savings section, select Weekly Savings, choose your preferred amount and day, and set up AutoPay.",
+              "To set up Weekly Savings:\n\n1. Open the Jar app\n2. Select **Weekly Savings**\n3. Enter the **amount** you want to save weekly\n4. Tap **Proceed**\n5. Select your payment method and setup autopay\n\nOnce done, the first debit for your weekly savings will happen **within 7 days** of setup.\n\nTo check your plan, tap the **Profile icon** > **Jar Gold** section > **Active** > **Active Plan**.",
             supportActionable: "In App Redirection",
             faqContent: "Text Suffices",
             deeplink: "https://www.myjar.app/",
@@ -405,7 +405,7 @@ export const faqData: FAQCategory[] = [
             question:
               "When will my first Weekly Savings debit be initiated after setup?",
             answer:
-              "Your first Weekly Savings debit will be initiated on the next scheduled day after you set up the plan.",
+              "The first debit will occur within **7 days** of setting up your Weekly Savings.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -414,7 +414,7 @@ export const faqData: FAQCategory[] = [
             question:
               "What is the minimum and maximum amount allowed for Weekly Savings?",
             answer:
-              "You can set up Weekly Savings with a minimum of ₹10 and a maximum of ₹5,000 per week.",
+              "You can start your Weekly Savings with minimum amount of **₹50** and maximum amount of **₹5000**. If you wish to save more, you can save upto ₹1,00,000 manually through Instant Save.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -422,7 +422,7 @@ export const faqData: FAQCategory[] = [
             id: "manage-weekly-savings",
             question: "How can I manage my Weekly Savings?",
             answer:
-              "You can manage your Weekly Savings from the Savings section in the Jar app.",
+              "To manage your active Weekly Savings plan:\n\n1. Open your Jar App.\n2. Tap on the **Profile** icon at the top left corner.\n3. Scroll down to the **Jar Gold** section. All active plans will be displayed here, with **Active** highlighted in green.\n4. Tap on the **Active Plan** to view details such as total savings, subscription amount, and total days invested.\n5. Scroll down to see the **Update Savings Plan** option.\n6. Tap to customize your savings plan.",
             supportActionable: "In App Redirection",
             faqContent: "Text Suffices",
             deeplink: "https://www.myjar.app/",
@@ -431,7 +431,7 @@ export const faqData: FAQCategory[] = [
             id: "change-weekly-savings-amount",
             question: "Can I change/edit my active Weekly Savings amount?",
             answer:
-              "Yes, you can change your Weekly Savings amount from the Savings section. Select your active plan and modify the amount.",
+              "Yes, you can change your Weekly Savings amount:\n\n1. Open your Jar App.\n2. Tap on the **Profile** icon at the top left corner.\n3. Scroll down to the **Jar Gold** section. All active plans will be displayed here, with **Active** highlighted in green.\n4. Tap on the **Active Plan** to view details.\n5. Tap on **Update Savings Plan**. Enter the amount you want to update.\n\nYour updated savings amount will apply from the next scheduled debit.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -439,7 +439,7 @@ export const faqData: FAQCategory[] = [
             id: "pause-weekly-savings",
             question: "How do I Pause my Weekly Savings Plan?",
             answer:
-              "You can pause your Weekly Savings Plan from the Savings section in the Jar app.",
+              "To pause your Weekly Savings Plan:\n\n1. Open your Jar App.\n2. Tap on the **Profile** icon at the top left corner.\n3. Scroll down to the **Jar Gold** section. All active plans will be displayed here, with **Active** highlighted in green.\n4. Tap on the **Active Plan** to view details.\n5. Tap on **Disable Savings Plan**.\n6. Select **Pause** to temporarily stop your weekly debits.\n\nYou can resume your plan anytime from the same section.",
             supportActionable: "In App Redirection",
             faqContent: "Text Suffices",
             deeplink: "https://www.myjar.app/",
@@ -448,7 +448,7 @@ export const faqData: FAQCategory[] = [
             id: "stop-weekly-savings",
             question: "How do I Stop my Weekly Savings Plan?",
             answer:
-              "You can stop your Weekly Savings Plan from the Savings section in the Jar app.",
+              "To stop your Weekly Savings Plan:\n\n1. Open your Jar App.\n2. Tap on the **Profile icon** at the top left corner.\n3. Scroll down to the **Jar Gold** section. All active plans will be displayed here, with **Active** highlighted in green.\n4. Tap on the **Active Plan** to view details.\n5. Tap on **Disable Savings Plan**.\n6. Select **Diable Savings Plan** to confirm, then tap **Stop**.\n\nNote: You can also stop a **Paused Plan** by tapping **Resume** and then stopping it.",
             supportActionable: "In App Redirection",
             faqContent: "Text Suffices",
             deeplink: "https://www.myjar.app/",
@@ -458,7 +458,7 @@ export const faqData: FAQCategory[] = [
             question:
               "What will happen if the scheduled Weekly Savings autopay fails?",
             answer:
-              "If your scheduled Weekly Savings autopay fails, the system will retry. If it continues to fail, your savings for that week will be skipped. Your existing savings remain safe.",
+              "If a weekly savings payment is missed for any reason, we'll automatically **retry within** the **next 15 days** to keep your savings on track.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -472,7 +472,7 @@ export const faqData: FAQCategory[] = [
             id: "what-are-monthly-savings",
             question: "What are Monthly Savings on Jar?",
             answer:
-              "Monthly Savings is an automated savings plan where a fixed amount is debited from your bank account once every month and invested in 24K digital gold.",
+              "Monthly Savings lets you automatically save a **fixed amount** in digital gold **every month**. The amount is auto-debited from your bank account, so you can save consistently without having to remember it. You can start, modify, or cancel it anytime.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -488,7 +488,7 @@ export const faqData: FAQCategory[] = [
             id: "how-setup-monthly-savings",
             question: "How do I set up Monthly Savings?",
             answer:
-              "You can set up Monthly Savings directly in the Jar app. Go to the Savings section, select Monthly Savings, choose your amount and date, and set up AutoPay.",
+              "To set up Monthly Savings:\n\n1. Open the Jar app\n2. Select **Monthly Savings**\n3. Enter the **amount** you want to save monthly\n4. Tap **Proceed**\n5. Select your payment method and setup autopay\n\nOnce done, the first debit for your monthly savings will happen **within 30 days** of setup.",
             supportActionable: "In App Redirection",
             faqContent: "Text Suffices",
             deeplink: "https://www.myjar.app/",
@@ -498,7 +498,7 @@ export const faqData: FAQCategory[] = [
             question:
               "When will my first Monthly Savings debit be initiated after setup?",
             answer:
-              "Your first Monthly Savings debit will be initiated on the date you selected during setup.",
+              "The first debit will occur within **30 days** of setting up your Monthly Savings.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -507,7 +507,7 @@ export const faqData: FAQCategory[] = [
             question:
               "What is the minimum and maximum amount allowed for Monthly Savings?",
             answer:
-              "You can set up Monthly Savings with a minimum of ₹10 and a maximum of ₹5,000 per month.",
+              "You can start your Monthly Savings with minimum amount of **₹50** and maximum amount of **₹15000**. If you wish to save more, you can save upto **₹1,00,000** manually through Instant Save.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -515,7 +515,7 @@ export const faqData: FAQCategory[] = [
             id: "manage-monthly-savings",
             question: "How can I manage my Monthly Savings?",
             answer:
-              "You can manage your Monthly Savings from the Savings section in the Jar app.",
+              "To manage your active Monthly Savings plan:\n\n1. Open your Jar App.\n2. Tap on the **Profile** icon at the top left corner.\n3. Scroll down to the **Jar Gold** section. All active plans will be displayed here, with **Active** highlighted in green.\n4. Tap on the **Active Plan** to view details such as total savings, subscription amount, and total days invested.\n5. Scroll down to see the **Update Savings Plan** option.\n6. Tap to customize your savings plan.",
             supportActionable: "In App Redirection",
             faqContent: "Text Suffices",
             deeplink: "https://www.myjar.app/",
@@ -524,7 +524,7 @@ export const faqData: FAQCategory[] = [
             id: "change-monthly-savings-amount",
             question: "Can I change/edit my active Monthly Savings amount?",
             answer:
-              "Yes, you can change your Monthly Savings amount. Go to the Savings section, select your active plan, and modify.",
+              "Yes, you can change your Monthly Savings amount:\n\n1. Open your Jar App.\n2. Tap on the **Profile** icon at the top left corner.\n3. Scroll down to the **Jar Gold** section. All active plans will be displayed here, with **Active** highlighted in green.\n4. Tap on the **Active Plan** to view details.\n5. Tap on **Update Savings Plan**. Enter the amount you want to update.\n\nYour updated savings amount will apply from the next scheduled debit.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -532,7 +532,7 @@ export const faqData: FAQCategory[] = [
             id: "pause-monthly-savings",
             question: "How do I Pause my Monthly Savings Plan?",
             answer:
-              "You can pause your Monthly Savings Plan from the Savings section in the Jar app.",
+              "To pause your Monthly Savings Plan:\n\n1. Open your Jar App.\n2. Tap on the **Profile** icon at the top left corner.\n3. Scroll down to the **Jar Gold** section. All active plans will be displayed here, with **Active** highlighted in green.\n4. Tap on the **Active Plan** to view details.\n5. Tap on **Disable Savings Plan**.\n6. Select **Pause** to temporarily stop your monthly debits.\n\nYou can resume your plan anytime from the same section.",
             supportActionable: "In App Redirection",
             faqContent: "Text Suffices",
             deeplink: "https://www.myjar.app/",
@@ -541,7 +541,7 @@ export const faqData: FAQCategory[] = [
             id: "stop-monthly-savings",
             question: "How do I Stop my Monthly Savings Plan?",
             answer:
-              "You can stop your Monthly Savings Plan from the Savings section in the Jar app.",
+              "To stop your Monthly Savings Plan:\n\n1. Open your Jar App.\n2. Tap on the **Profile icon** at the top left corner.\n3. Scroll down to the **Jar Gold** section. All active plans will be displayed here, with **Active** highlighted in green.\n4. Tap on the **Active Plan** to view details.\n5. Tap on **Disable Savings Plan**.\n6. Select **Diable Savings Plan** to confirm, then tap **Stop**.\n\nNote: You can also stop a **Paused Plan** by tapping **Resume** and then stopping it.",
             supportActionable: "In App Redirection",
             faqContent: "Text Suffices",
             deeplink: "https://www.myjar.app/",
@@ -551,7 +551,7 @@ export const faqData: FAQCategory[] = [
             question:
               "What will happen if the scheduled Monthly Savings autopay fails?",
             answer:
-              "If your scheduled Monthly Savings autopay fails, the system will retry. If it continues to fail, your savings for that month will be skipped. Your existing savings remain safe.",
+              "If a monthly savings payment is missed for any reason, we'll automatically **retry within** the **next 15 days** to keep your savings on track.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -565,7 +565,7 @@ export const faqData: FAQCategory[] = [
             id: "what-are-instant-saving",
             question: "What are Instant Saving?",
             answer:
-              "Instant Saving allows you to invest any amount into digital gold immediately, without setting up a recurring plan. It's perfect for one-time investments.",
+              "Instant Saving allows you to invest any amount into digital gold immediately, without setting up a recurring plan. Tap **Save Instantly** on the home screen, enter an amount, and tap **Pay Now** to complete the purchase.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -581,7 +581,7 @@ export const faqData: FAQCategory[] = [
             id: "purchase-gold-instantly",
             question: "How can I purchase digital gold instantly on Jar?",
             answer:
-              "Open the Jar app, go to the home screen, and tap on 'Instant Save' or 'Save Now'. Enter the amount you want to invest and complete the payment via UPI.",
+              "Open the Jar app, go to the home screen, and tap on **Save Instantly**. Enter the amount you want to invest and tap **Pay Now** to complete the payment via UPI.",
             supportActionable: "In App Redirection",
             faqContent: "Text Suffices",
             deeplink: "https://www.myjar.app/",
@@ -591,7 +591,7 @@ export const faqData: FAQCategory[] = [
             question:
               "What are the maximum and minimum amounts I can use for Instant Saving?",
             answer:
-              "You can save a minimum of ₹10 and a maximum of ₹1,00,000 per transaction through Instant Saving.",
+              "You can save a minimum of **₹10** and a maximum of **₹1,00,000** per transaction through Instant Saving. The default suggested amount is **₹1,000**.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -599,10 +599,9 @@ export const faqData: FAQCategory[] = [
             id: "instant-saving-daily-limit",
             question: "How many Instant Saving transactions can I do in a day?",
             answer:
-              "You can make multiple Instant Saving transactions in a day. Check the app for the latest daily transaction limits.",
-            supportActionable: "In App Redirection",
+              "You can make up to **5 transactions** per day through Instant Saving, with a combined daily limit of **₹1,00,000**.",
+            supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
-            deeplink: "https://www.myjar.app/",
           },
         ],
       },
@@ -614,9 +613,9 @@ export const faqData: FAQCategory[] = [
             id: "track-investment-value",
             question: "How do I track my investment value?",
             answer:
-              "You can track your investment value on the Jar app home screen. It shows your total invested amount, current value, and returns in real-time.",
+              "You can track your investment value in the Jar app:\n\n1. Open your **Locker** to see the total **amount** and **total value** of your gold/silver.\n2. Go to the **Transactions tab** to see each transaction with the **invested amount** and **current value**.\n\nAll values are updated in real-time based on live market prices.",
             supportActionable: "In App Redirection",
-            faqContent: "Text Suffices",
+            faqContent: "GIF",
             deeplink: "https://www.myjar.app/",
           },
           {
@@ -624,9 +623,9 @@ export const faqData: FAQCategory[] = [
             question:
               "Where can I see the payment history for my investments on Jar?",
             answer:
-              "You can view your complete payment history in the Jar app. Go to your profile or transaction history section to see all your past investments and payments.",
+              "You can view your complete **payment history** in the Jar app under the **Transactions** section. Here you can see all your past investments, withdrawals, and payment details.",
             supportActionable: "Solved by FAQ",
-            faqContent: "Text Suffices",
+            faqContent: "GIF",
           },
         ],
       },
@@ -639,7 +638,7 @@ export const faqData: FAQCategory[] = [
             question:
               "What is Round-offs and how does it work? Why opt for the round off feature?",
             answer:
-              "Round-Off automatically rounds up your online spends to the nearest amount and invests the spare change into digital gold. For example, if you spend ₹47, Jar rounds it to ₹50 and invests ₹3 in gold. It's a great way to save without noticing!",
+              "Round-Off helps you **save automatically** every time you **spend online**. Jar **reads** your transaction SMS **via SMS** permissions, **rounds** the amount to the **nearest ₹5** or **₹10**, and invests the spare change into digital gold.\n\nFor example, if you spend ₹47, Jar rounds it to ₹50 and invests ₹3 in gold. It's a great way to save without noticing!",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -647,7 +646,7 @@ export const faqData: FAQCategory[] = [
             id: "setup-round-off",
             question: "How do I set up Round-Off?",
             answer:
-              "You can set up Round-Off from the Jar app. Go to the Savings section, find the Round-Off option, and enable it.",
+              "To set up Round-Off:\n\n1. Open the Jar app.\n2. Go to **Account** > **Settings** > **Round-offs**.\n3. Tap **Proceed** and then **Go Ahead** to enable round-offs.\n4. Grant SMS permissions if prompted.\n\nOnce enabled, Jar will automatically detect your online spends and round them off.",
             supportActionable: "In App Redirection",
             faqContent: "Text Suffices",
             deeplink: "https://www.myjar.app/",
@@ -657,7 +656,7 @@ export const faqData: FAQCategory[] = [
             question:
               "What is the minimum & maximum amount that can be rounded off?",
             answer:
-              "The Round-Off amount depends on your spending. The minimum round-off is ₹1 and the maximum can be configured in the app settings.",
+              "The minimum round-off amount is **₹5** and the maximum is **₹20** per transaction. The exact round-off depends on your spending amount.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -665,7 +664,7 @@ export const faqData: FAQCategory[] = [
             id: "stop-round-off",
             question: "How do I stop Round-Off on Jar?",
             answer:
-              "You can stop Round-Off from the Savings section in the Jar app. Find your active Round-Off and tap Stop.",
+              "To stop Round-Off:\n\n1. Open the Jar app.\n2. Go to **Account** > **Settings** > **Round-offs**.\n3. Tap **Stop Round-Off**.\n4. Select **Disable** to completely stop, or choose **Pause Instead** to temporarily stop.\n\nYou can re-enable Round-Off anytime from the same section.",
             supportActionable: "In App Redirection",
             faqContent: "Text Suffices",
             deeplink: "https://www.myjar.app/",
@@ -674,7 +673,7 @@ export const faqData: FAQCategory[] = [
             id: "pause-round-off",
             question: "How do I pause Round-Off on Jar?",
             answer:
-              "You can pause Round-Off from the Savings section in the Jar app. Find your active Round-Off and tap Pause.",
+              "To pause Round-Off:\n\n1. Open the Jar app.\n2. Go to **Account** > **Settings** > **Round-offs**.\n3. Tap **Stop Round-Off**.\n4. Select **Pause Instead** to temporarily stop round-offs.\n\nYou can resume Round-Off anytime from the same section.",
             supportActionable: "In App Redirection",
             faqContent: "Text Suffices",
             deeplink: "https://www.myjar.app/",
@@ -699,7 +698,7 @@ export const faqData: FAQCategory[] = [
             answer:
               "Digital Silver is a way to invest in pure silver digitally through the Jar app. For every amount you invest, an equivalent amount of pure silver is securely stored in your name in Brink's vaults.",
             supportActionable: "Solved by FAQ",
-            faqContent: "Text Suffices",
+            faqContent: "Video",
           },
           {
             id: "why-digital-silver",
@@ -846,7 +845,7 @@ export const faqData: FAQCategory[] = [
             answer:
               "Sometimes payments take a few minutes to process. If your purchase is still pending after 30 minutes, please use the in-app troubleshooting option to check the status.",
             supportActionable: "Through In App Troubleshooting",
-            faqContent: "Video",
+            faqContent: "GIF",
             deeplink: "https://www.myjar.app/",
           },
           {
@@ -865,7 +864,7 @@ export const faqData: FAQCategory[] = [
             answer:
               "Your payment is being processed. It usually takes a few minutes. If it doesn't update within 30 minutes, use the in-app troubleshooting option.",
             supportActionable: "Through In App Troubleshooting",
-            faqContent: "Video",
+            faqContent: "GIF",
             deeplink: "https://www.myjar.app/",
           },
           {
@@ -937,7 +936,7 @@ export const faqData: FAQCategory[] = [
             answer:
               "The withdrawal is being processed. It may take some time for the amount to reach your bank account. Use in-app troubleshooting to check status.",
             supportActionable: "Through In App Troubleshooting",
-            faqContent: "Video",
+            faqContent: "GIF",
             deeplink: "https://www.myjar.app/",
           },
           {
@@ -957,7 +956,7 @@ export const faqData: FAQCategory[] = [
             answer:
               "If your withdrawal failed, the silver will be credited back to your locker. Use in-app troubleshooting for details.",
             supportActionable: "Through In App Troubleshooting",
-            faqContent: "Text Suffices",
+            faqContent: "GIF",
             deeplink: "https://www.myjar.app/",
           },
           {
@@ -967,7 +966,7 @@ export const faqData: FAQCategory[] = [
             answer:
               "Silver is usually added back to your locker within 24-48 hours after a failed withdrawal.",
             supportActionable: "Through In App Troubleshooting",
-            faqContent: "Text Suffices",
+            faqContent: "GIF",
             deeplink: "https://www.myjar.app/",
           },
           {
@@ -976,6 +975,14 @@ export const faqData: FAQCategory[] = [
               "When will the amount be credited back to my source account?",
             answer:
               "If a withdrawal fails, the amount will be credited back to your source within 5-7 business days.",
+            supportActionable: "Solved by FAQ",
+            faqContent: "Text Suffices",
+          },
+          {
+            id: "why-kyc-silver",
+            question: "Why should I do KYC?",
+            answer:
+              "KYC is essential to keep your **account** and **savings secure**. Without KYC, you can only **withdraw more than ₹30** worth of savings.\n\nCompleting **PAN KYC** allows you to transact up to **₹1.5 lakh** and unlocks full withdrawal access.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -1005,10 +1012,27 @@ export const faqData: FAQCategory[] = [
             id: "where-start-kyc",
             question: "From where can I start doing my KYC?",
             answer:
-              "You can start your KYC from the Jar app. Go to your Profile or the KYC section and follow the step-by-step process.",
+              "To start your KYC:\n\n1. Open the Jar app and go to **Profile**.\n2. Tap on **KYC Verification** (it will show **Not Verified**).\n3. Enter your **PAN** details and tap **Verify**.\n4. If you **don't** have a PAN, tap **Verify another way** to proceed with **Aadhaar verification**.\n5. Upload your **Aadhaar card** photo using the **camera** or **gallery**.\n6. Tap **Upload Photo** and your KYC will be verified within **60 seconds**.",
             supportActionable: "In App Redirection",
             faqContent: "Text Suffices",
             deeplink: "https://www.myjar.app/",
+          },
+          {
+            id: "kyc-status",
+            question: "How can I check my KYC status?",
+            answer:
+              "To check your KYC status:\n\n1. Open the Jar app and go to **Profile**.\n2. Tap on **KYC Verification**.\n3. Your status will be shown as **Verified** or **Not verified**.",
+            supportActionable: "In App Redirection",
+            faqContent: "Text Suffices",
+            deeplink: "https://www.myjar.app/",
+          },
+          {
+            id: "pan-different-account",
+            question: "Can I use one PAN on different Jar accounts?",
+            answer:
+              "No, a PAN card can be linked to **only one** Jar account. You cannot use the same PAN for multiple accounts.",
+            supportActionable: "Solved by FAQ",
+            faqContent: "Text Suffices",
           },
         ],
       },
@@ -1021,7 +1045,7 @@ export const faqData: FAQCategory[] = [
             question:
               "Can I purchase digital gold/silver without doing KYC?",
             answer:
-              "You can purchase digital gold/silver without KYC up to certain limits. However, KYC is required for full access to all features.",
+              "**Yes**, you can purchase digital gold/silver without KYC. However, to withdraw **more than ₹30**, KYC is required.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -1030,7 +1054,23 @@ export const faqData: FAQCategory[] = [
             question:
               "Can I withdraw my digital gold/silver without doing KYC?",
             answer:
-              "No, KYC is mandatory for withdrawing your digital gold/silver. Please complete your KYC to enable withdrawals.",
+              "Without KYC, your withdrawal access is **limited**. You can **only ₹30** withdraw without completing your KYC. Complete your KYC to unlock full withdrawal access.",
+            supportActionable: "Solved by FAQ",
+            faqContent: "Text Suffices",
+          },
+          {
+            id: "1.5-lakh-asked-again",
+            question: "Why am I being asked for KYC again after crossing ₹1.5 lakh?",
+            answer:
+              "After crossing ₹1.5 lakh in transactions, you are required to complete **Aadhaar verification** in addition to **PAN verification** as per **government regulatory guidelines**. This is to ensure compliance and keep your account secure.",
+            supportActionable: "Solved by FAQ",
+            faqContent: "Text Suffices",
+          },
+          {
+            id: "savings-plan-paused-after-kyc",
+            question: "Why has my savings plan been paused after KYC?",
+            answer:
+              "Your savings plan may be paused if additional **Aadhaar verification** or **PAN verification** is required as per **government regulatory guidelines**. Complete the verification to resume your plan.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -1076,8 +1116,8 @@ export const faqData: FAQCategory[] = [
             id: "kyc-failing-multiple-attempts",
             question: "Why is my KYC failing even after multiple attempts?",
             answer:
-              "KYC can fail due to unclear documents, name mismatch, or technical issues. Ensure your documents are clear, details match, and try again. If it still fails, contact support.",
-            supportActionable: "Solved by FAQ",
+              "KYC can fail due to unclear documents or technical issues. Ensure your photos are **clear** and details are **correct**. If it still fails, **Contact Jar Support** at **voc@changejar.in**.",
+            supportActionable: "Support Required",
             faqContent: "Text Suffices",
           },
           {
@@ -1085,7 +1125,7 @@ export const faqData: FAQCategory[] = [
             question:
               "My KYC has been stuck in pending for more than 24 hours. What should I do?",
             answer:
-              "If your KYC has been pending for more than 24 hours, please contact our support team for manual verification and approval.",
+              "If your KYC has been pending for more than 24 hours, please **Contact Jar Support** at **voc@changejar.in** for manual verification and approval.",
             supportActionable: "Support Required",
             faqContent: "Text Suffices",
             comments: "Support - manually and approve",
@@ -1101,8 +1141,8 @@ export const faqData: FAQCategory[] = [
             question:
               "After completing my KYC, I am unable to add new VPA. Why?",
             answer:
-              "After KYC completion, the name on your UPI ID must match your KYC name. If there's a mismatch, you won't be able to add that UPI ID directly.",
-            supportActionable: "Solved by FAQ",
+              "After KYC completion, the name on your UPI ID must match your KYC name. If there's a mismatch, you won't be able to add that UPI ID directly. **Contact Jar Support** at **voc@changejar.in** for assistance.",
+            supportActionable: "Support Required",
             faqContent: "Text Suffices",
           },
           {
@@ -1110,7 +1150,7 @@ export const faqData: FAQCategory[] = [
             question:
               "Can I redo KYC? I want to change my name on Invoice?",
             answer:
-              "Once KYC is completed, it cannot be redone. The name on your invoice will match your KYC documents. If you need a name change, contact support.",
+              "Once KYC is completed, it **cannot** be redone. The name on your invoice will match your KYC documents. If you need a name change, **Contact Jar Support** at **voc@changejar.in**.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -1132,7 +1172,7 @@ export const faqData: FAQCategory[] = [
             id: "what-is-primary-upi",
             question: "What is a Primary UPI ID on Jar?",
             answer:
-              "Your Primary UPI ID is the main UPI address linked to your Jar account. It's used for all withdrawals and is linked to your verified identity.",
+              "Your **Primary UPI ID** is the UPI address that was used during your **first savings** transaction on Jar. The **name** on this UPI ID becomes your registered identity on the platform.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -1140,7 +1180,7 @@ export const faqData: FAQCategory[] = [
             id: "check-primary-upi",
             question: "Where can I check my Primary UPI ID?",
             answer:
-              "You can check your Primary UPI ID in the Jar app under your Profile or UPI section.",
+              "You can check your **Primary UPI ID** in the Jar app under your Profile > UPI IDs section. It will be marked as your primary.",
             supportActionable: "In App Redirection",
             faqContent: "Text Suffices",
             deeplink: "https://www.myjar.app/",
@@ -1149,8 +1189,16 @@ export const faqData: FAQCategory[] = [
             id: "change-primary-upi",
             question: "Can I change my Primary UPI ID?",
             answer:
-              "Your Primary UPI ID is set during account creation and cannot be changed directly. If needed, contact support for assistance.",
-            supportActionable: "Solved by FAQ",
+              "Your Primary UPI ID **cannot** be changed directly. If needed, **Contact Jar Support** at **voc@changejar.in** for assistance.\n\n**Note:** A name update request may require document verification.",
+            supportActionable: "Support Required",
+            faqContent: "Text Suffices",
+          },
+          {
+            id: "documents-for-name-update",
+            question: "What documents are required for a name update on my Primary UPI ID?",
+            answer:
+              "To update the name on your Primary UPI ID, you may need to provide:\n\n• **Transaction Verification** : Proof of the original transaction\n• **Identity Proof** : Government-issued ID with updated name\n• **Bank Statement** : Recent statement showing the UPI ID\n• **Additional Documents** : Any other documents requested by the support team",
+            supportActionable: "Support Required",
             faqContent: "Text Suffices",
           },
           {
@@ -1158,7 +1206,7 @@ export const faqData: FAQCategory[] = [
             question: "Why am I unable to delete my Primary UPI ID?",
             answer:
               "Your Primary UPI ID cannot be deleted as it's the main identity linked to your Jar account for security purposes.",
-            supportActionable: "Solved by FAQ",
+            supportActionable: "Support Required",
             faqContent: "Text Suffices",
           },
           {
@@ -1166,7 +1214,7 @@ export const faqData: FAQCategory[] = [
             question:
               "What should I do if the Primary UPI ID shown on my account is not recognized by me?",
             answer:
-              "If you don't recognize the Primary UPI ID on your account, please contact support immediately and report it through the fraud reporting flow.",
+              "If the **Primary UPI ID** shown on your account is not recognized by you, please **Conatct Jar Support** immediately at **voc@changejar.in** and report it through the fraud reporting flow.",
             supportActionable: "Support Required",
             faqContent: "Text Suffices",
             comments: "Report Fraud Flow",
@@ -1176,7 +1224,7 @@ export const faqData: FAQCategory[] = [
             question:
               "I am the owner of the Primary UPI ID, however my name itself has changed. Can I request for Primary UPI ID change?",
             answer:
-              "If your name has changed (e.g., after marriage), you can request a Primary UPI ID update through the in-app troubleshooting option with supporting documents.",
+              "**Yes**, if your **name update** has changed (e.g., after marriage), you can request a Primary UPI ID update. **Contact Jar Support** with supporting documents for assistance.",
             supportActionable: "Through In App Troubleshooting",
             faqContent: "Text Suffices",
             deeplink: "https://www.myjar.app/",
@@ -1192,7 +1240,7 @@ export const faqData: FAQCategory[] = [
             question:
               "Where can I view all the UPI IDs linked to my Jar account?",
             answer:
-              "You can view all linked UPI IDs in the Jar app under Profile > UPI IDs section.",
+              "You can view all linked UPI IDs in the Jar app under Profile > UPI IDs section.\n\n**Note:** Your Primary UPI ID will be marked separately from other UPI IDs.",
             supportActionable: "In App Redirection",
             faqContent: "Text Suffices",
             deeplink: "https://www.myjar.app/",
@@ -1212,7 +1260,7 @@ export const faqData: FAQCategory[] = [
             question:
               "Can I delete UPI IDs other than my Primary UPI ID?",
             answer:
-              "Yes, you can delete UPI IDs other than your Primary UPI ID from the UPI management section in the app.",
+              "Yes, you can **delete all** UPI IDs **expect** your Primary UPI ID from the UPI management section in the app.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -1221,7 +1269,7 @@ export const faqData: FAQCategory[] = [
             question:
               "What is the maximum number of UPI IDs I can add on Jar?",
             answer:
-              "You can add multiple UPI IDs to your Jar account. Check the app for the current maximum limit.",
+              "You can add up to **5 UPI IDs** to your Jar account, including your Primary UPI ID.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -1235,8 +1283,8 @@ export const faqData: FAQCategory[] = [
             id: "unable-add-new-upi",
             question: "Why am I unable to add a new UPI ID?",
             answer:
-              "You may be unable to add a new UPI ID due to a name mismatch with your KYC details, or you may have reached the maximum limit. Ensure the UPI ID name matches your KYC name.",
-            supportActionable: "Solved by FAQ",
+              "You may be unable to add a new UPI ID due to a name mismatch with your KYC details, or you may have reached the maximum limit. **Contact Jar Support** at **voc@changejar.in** for assistance.",
+            supportActionable: "Support Required",
             faqContent: "Text Suffices",
           },
           {
@@ -1244,8 +1292,8 @@ export const faqData: FAQCategory[] = [
             question:
               "Why am I seeing a name mismatch error while adding a new UPI ID?",
             answer:
-              "The name on the UPI ID must match the name on your KYC documents. If they don't match, you'll see a name mismatch error. You can request an exception by submitting documents.",
-            supportActionable: "Solved by FAQ",
+              "The name on the UPI ID must match the name on your KYC documents. If they don't match, you'll see a name mismatch error. **Contact Jar Support** to request an exception by submitting documents.",
+            supportActionable: "Support Required",
             faqContent: "Text Suffices",
           },
           {
@@ -1253,7 +1301,7 @@ export const faqData: FAQCategory[] = [
             question:
               "When can I request to add a UPI ID that does not match the name on my Primary UPI ID or does not belong to me?",
             answer:
-              "You can request to add a non-matching UPI ID by submitting the required documents through the in-app process. This is reviewed on a case-by-case basis.",
+              "You can request to add a non-matching UPI ID in certain scenarios.\n\n**Example Scenarios** : Family member's UPI ID, name change after marriage, etc.\n\n**Note:** All requests are reviewed on a case-by-case basis with document verification.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -1262,7 +1310,7 @@ export const faqData: FAQCategory[] = [
             question:
               "What documents are required to add a UPI ID that does not match the name on my Primary UPI ID?",
             answer:
-              "You may need to submit identity proof and a bank statement linking the UPI ID to your name. The exact requirements are shown in the in-app request process.",
+              "**Important:** You may need to submit:\n\n• **PAN** card of the UPI ID owner\n• **Aadhaar** card of the UPI ID owner\n• Relationship proof (if applicable)\n\n**Contact Jar Support** with these documents for processing.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -1270,10 +1318,9 @@ export const faqData: FAQCategory[] = [
             id: "raise-request-add-upi",
             question: "How can I raise a request to add or update such a UPI ID?",
             answer:
-              "You can raise a request through the in-app troubleshooting section. Submit the required documents and your request will be processed within 72 hours.",
-            supportActionable: "Through In App Troubleshooting",
+              "**Contact Jar Support** at **voc@changejar.in** with the required documents. Your request will be processed within 3-5 working days.",
+            supportActionable: "Support Required",
             faqContent: "Text Suffices",
-            deeplink: "https://www.myjar.app/",
             comments: "72 hours TAT",
           },
           {
@@ -1281,7 +1328,7 @@ export const faqData: FAQCategory[] = [
             question:
               "After submitting the required documents, how long does it take for the new UPI ID to be activated on Jar?",
             answer:
-              "After submitting the required documents, the new UPI ID is typically activated within 72 hours.",
+              "After submitting the required documents, the new UPI ID is typically activated within **3-5 working days**.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -1304,7 +1351,7 @@ export const faqData: FAQCategory[] = [
             question:
               "Why is my gold purchase still pending even though the payment was successful?",
             answer:
-              "Sometimes payments take a few minutes to process. If your purchase is still pending after 30 minutes, use the in-app troubleshooting option.",
+              "Payment processing can take up to **24-72 hours** in some cases. If your purchase is still pending, use the **Troubleshoot** option in the app to check status and resolve the issue.",
             supportActionable: "Through In App Troubleshooting",
             faqContent: "Video",
             deeplink: "https://www.myjar.app/",
@@ -1314,9 +1361,9 @@ export const faqData: FAQCategory[] = [
             question:
               "Why is my gold purchase marked as failed after a successful payment?",
             answer:
-              "This can happen due to payment processing delays. If money was debited, it will be refunded within 5-7 business days. Use in-app troubleshooting for details.",
+              "Payment processing can take up to **24-72 hours** in some cases. If your purchase shows as failed, use the **Troubleshoot** option in the app to check status and resolve the issue.",
             supportActionable: "Through In App Troubleshooting",
-            faqContent: "Text Suffices",
+            faqContent: "Video",
             deeplink: "https://www.myjar.app/",
           },
           {
@@ -1324,15 +1371,15 @@ export const faqData: FAQCategory[] = [
             question:
               "Why do I see gold purchases in my transaction history that I did not make?",
             answer:
-              "These could be from your active savings plans (Daily/Weekly/Monthly Savings or Round-Off). Check your active subscriptions in the app. If they still seem unauthorized, contact support immediately.",
-            supportActionable: "Solved by FAQ",
+              "These could be from your **active savings plan** (Daily/Weekly/Monthly Savings or Round-Off). Check your active subscriptions in the app. If they still seem unauthorized, **Contact Jar Support** immediately.",
+            supportActionable: "Support Required",
             faqContent: "Text Suffices",
           },
           {
             id: "payment-in-progress",
             question: "Why is my payment status showing as 'In Progress'?",
             answer:
-              "Your payment is being processed. It usually takes a few minutes. If it doesn't update within 30 minutes, use in-app troubleshooting.",
+              "Payment processing can take up to **24-72 hours** in some cases. If your payment is still in progress, use the **Troubleshoot** option in the app to check status and resolve the issue.",
             supportActionable: "Through In App Troubleshooting",
             faqContent: "Video",
             deeplink: "https://www.myjar.app/",
@@ -1342,16 +1389,16 @@ export const faqData: FAQCategory[] = [
             question:
               "How long does it take for a payment status to update to 'Success' or 'Failed'?",
             answer:
-              "Payment status usually updates within a few minutes. In rare cases, it may take up to 30 minutes. Use in-app troubleshooting if it takes longer.",
+              "Payment processing can take up to **24-72 hours** in some cases. If your payment status hasn't updated, use the **Troubleshoot** option in the app to check status.",
             supportActionable: "Through In App Troubleshooting",
-            faqContent: "Text Suffices",
+            faqContent: "Video",
             deeplink: "https://www.myjar.app/",
           },
           {
             id: "payment-status-failed",
             question: "Why is my payment status showing as 'Failed'?",
             answer:
-              "A payment can fail due to insufficient balance, bank server issues, or UPI app errors. If money was debited, it will be refunded within 5-7 business days.",
+              "A payment can fail due to insufficient balance, bank server issues, or UPI app errors. If money was debited, it will be refunded within **24-72 hours**.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -1374,7 +1421,7 @@ export const faqData: FAQCategory[] = [
             id: "view-payment-details",
             question: "Where can I view the details of my payments?",
             answer:
-              "You can view your payment details in the Transaction History section of the Jar app.",
+              "You can view your payment details in the **Transactions** section of the Jar app. Use **filters** to sort by type.\n\n**Note:** Each transaction shows:\n• **Transaction status**\n• **Order details**\n• Option to download **invoice**\n\nTap on any transaction and select **Invoice** to download.",
             supportActionable: "In App Redirection",
             faqContent: "GIF",
             deeplink: "https://www.myjar.app/",
@@ -1383,7 +1430,7 @@ export const faqData: FAQCategory[] = [
             id: "find-invoice",
             question: "Where can I find the invoice for my payment?",
             answer:
-              "You can find invoices for your payments in the Transaction History section. Tap on any transaction to view and download the invoice.",
+              "You can find invoices in the **Transactions** section. Tap on any transaction and select **Invoice** to download.\n\n**Note:** Invoices are available for all successful transactions.",
             supportActionable: "In App Redirection",
             faqContent: "GIF",
             deeplink: "https://www.myjar.app/",
@@ -1398,7 +1445,7 @@ export const faqData: FAQCategory[] = [
             id: "download-account-statement",
             question: "Where can I download my account statement?",
             answer:
-              "You can download your account statement from the Profile or Settings section in the Jar app.",
+              "To download your account statement:\n\n1. Go to **Transactions** in the Jar app.\n2. Tap on **Statement**.\n3. Select your preferred **date range**.\n4. Tap **Generate Statement**.\n\nYou can also access previously generated statements from **Previous Reports**.",
             supportActionable: "In App Redirection",
             faqContent: "GIF",
             deeplink: "https://www.myjar.app/",
@@ -1408,8 +1455,8 @@ export const faqData: FAQCategory[] = [
             question:
               "How long does it take for an account statement to be generated?",
             answer:
-              "Account statements are usually generated within a few minutes. You'll be notified once it's ready.",
-            supportActionable: "In App Redirection",
+              "Account statements are usually generated within a few minutes. You'll be notified once it's ready. You can check the status in **Previous Reports**.",
+            supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
             deeplink: "https://www.myjar.app/",
           },
@@ -1418,7 +1465,7 @@ export const faqData: FAQCategory[] = [
             question:
               "Where can I view previously requested account statements?",
             answer:
-              "Previously requested account statements can be found in the Profile or Settings section under Account Statements.",
+              "Previously requested account statements can be found in **Previous Reports** within the Transactions > Statement section.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -1440,7 +1487,7 @@ export const faqData: FAQCategory[] = [
             id: "when-autopay-setup",
             question: "When does an autopay get setup on Jar?",
             answer:
-              "An autopay is set up when you activate any savings plan (Daily, Weekly, or Monthly Savings) and complete the UPI mandate setup.",
+              "An autopay is set up through your **selected UPI app** when you activate any savings plan. You can **manage** it **easily** from the Jar app.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -1449,7 +1496,7 @@ export const faqData: FAQCategory[] = [
             question:
               "Where can I see the Savings Plans I have opted for on Jar?",
             answer:
-              "You can see all your active Savings Plans in the Savings section of the Jar app.",
+              "You can see all your **Gold Saving Plans** in the Jar app.\n\n**Note:** This section shows all **savings plans** you are **enrolled in**, including the **amount** for each plan. You can also **increase** your savings by **updating** your plan.",
             supportActionable: "In App Redirection",
             faqContent: "GIF",
             deeplink: "https://www.myjar.app/",
@@ -1459,7 +1506,7 @@ export const faqData: FAQCategory[] = [
             question:
               "How can I manage the Savings Plans I have active on Jar?",
             answer:
-              "You can manage your active Savings Plans from the Savings section in the Jar app. Here you can edit, pause, or stop plans.",
+              "To manage your active Savings Plans:\n\n1. Open the Jar app and go to **Profile**.\n2. Scroll down to the **Jar Gold** section.\n3. All active plans will be displayed here, with **Active** highlighted in **green**.\n4. Tap on your plan to access **Manage Savings**.\n5. From here you can **Pause** or **Stop** your plan.\n\n**Note:** Plans marked as **Active** can be managed directly from this section.",
             supportActionable: "In App Redirection",
             faqContent: "Video",
             deeplink: "https://www.myjar.app/",
@@ -1474,7 +1521,7 @@ export const faqData: FAQCategory[] = [
             id: "how-pause-savings",
             question: "How do I Pause my Savings Plan?",
             answer:
-              "You can pause your Savings Plan from the Savings section in the Jar app. Select your plan and choose Pause.",
+              "To pause your Savings Plan:\n\n1. Open the Jar app and go to **Profile**.\n2. Scroll down to the **Jar Gold** section.\n3. Tap on the **Active** plan.\n4. Tap on **Manage Savings**.\n5. Select **Pause** to temporarily stop your savings.\n\nYou can resume your plan anytime from the same section.",
             supportActionable: "In App Redirection",
             faqContent: "Text Suffices",
             deeplink: "https://www.myjar.app/",
@@ -1483,9 +1530,24 @@ export const faqData: FAQCategory[] = [
             id: "why-not-pause",
             question: "Why should I not Pause my plan?",
             answer:
-              "Pausing your plan means you'll miss out on building consistent savings. Regular savings help you accumulate gold over time and benefit from cost averaging.",
+              "Pausing your plan **interrupts** your savings momentum and may cause a **delay** in reaching your goals. **Consistent investing** helps your savings **grow** steadily over time.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
+          },
+        ],
+      },
+      {
+        id: "resume-savings",
+        name: "Resume Savings",
+        questions: [
+          {
+            id: "resume-savings-plan",
+            question: "How do I Resume my Savings Plan?",
+            answer:
+              "To resume your paused Savings Plan:\n\n1. Open the Jar app and go to **Profile**.\n2. Scroll down to the **Jar Gold** section.\n3. Find your paused plan and tap **RESUME**.\n4. Tap **Resume** to confirm.\n5. Go to **Manage Savings** to verify.\n\n**Note:** Once **Resumed**, your plan will be marked as Active and debits will restart.",
+            supportActionable: "In App Redirection",
+            faqContent: "Text Suffices",
+            deeplink: "https://www.myjar.app/",
           },
         ],
       },
@@ -1497,7 +1559,7 @@ export const faqData: FAQCategory[] = [
             id: "how-stop-savings",
             question: "How do I Stop my Savings Plan?",
             answer:
-              "You can stop your Savings Plan from the Savings section in the Jar app. Select your plan and choose Stop.",
+              "To stop your Savings Plan:\n\n1. Open the Jar app and tap the **Profile icon**.\n2. Scroll down to the **Jar Gold** section. All active plans will be displayed with **Active** highlighted in green.\n3. Tap on the **Active Plan** to view details.\n4. Scroll down and tap on **Manage Savings**.\n5. Select **Stop** and then confirm by tapping **Stop Savings**.\n\n**Note:** Plans marked as **Active** show **Stop** option. For a **Paused Plan**, tap **Resume** first, then stop.",
             supportActionable: "In App Redirection",
             faqContent: "Text Suffices",
             deeplink: "https://www.myjar.app/",
@@ -1506,7 +1568,7 @@ export const faqData: FAQCategory[] = [
             id: "why-not-stop",
             question: "Why should I not Stop my plan?",
             answer:
-              "Stopping your plan means your automated savings will end. Your existing savings remain safe, but you'll need to manually save or restart a plan to continue growing your gold.",
+              "Stopping your plan **ends** your **automatic savings** completely. This may cause a **delay** in reaching your savings goals. Your existing savings remain safe, but you'll need to manually save or restart a plan to continue growing your gold.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -1536,7 +1598,7 @@ export const faqData: FAQCategory[] = [
             id: "withdraw-to-bank",
             question: "How can I withdraw my savings in my bank account?",
             answer:
-              "Go to the Withdrawal section in the Jar app, enter the amount, select your UPI ID, and confirm. The amount will be credited to your bank account.",
+              "To withdraw to your bank account:\n\n1. Tap **Withdraw** on the home screen.\n2. Select **Withdraw to Bank Account**.\n3. Enter the **amount** you want to withdraw.\n4. Tap **Proceed** and select your **UPI ID**.\n5. Tap **Confirm** to complete the withdrawal.\n\nTo track your withdrawal, go to **Transactions** > **Filter** > **Withdrawal** under **Transaction Type**.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -1545,7 +1607,7 @@ export const faqData: FAQCategory[] = [
             question:
               "How can I use my Jar savings to purchase Jewellery/Gold Coins?",
             answer:
-              "You can use your Jar savings to purchase jewellery and gold coins through Nek, Jar's jewellery platform. Browse products and pay using your Jar gold balance.",
+              "To purchase jewellery or gold coins:\n\n1. Tap **Withdraw** on the home screen.\n2. Select **24K Standard Gold Coin / Exclusive Silver Jewellery**.\n3. Browse products and proceed to **checkout**.\n4. Pay using your **Jar Savings** (minimum **0.1g or more** gold required).\n\nTo track your order, go to **Transactions** > **Filter** > **Withdrawal** under **Transaction Type**. Orders will show as **Reedeemed on Nek**.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -1589,7 +1651,7 @@ export const faqData: FAQCategory[] = [
             question:
               "Why there is a difference in my Current vs my Invested Value?",
             answer:
-              "The difference reflects changes in gold market prices over time. Your current value is based on live rates and may be higher or lower than your invested amount.",
+              "The difference reflects changes in gold market prices over time.\n\n• **Invested Value** : Total amount you've invested\n• **Current Value** : Latest value based on live market prices\n\nSince gold prices fluctuate daily, your current value may be higher or lower than your invested amount.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -1604,7 +1666,7 @@ export const faqData: FAQCategory[] = [
             question:
               "Why is my withdrawal still in progress even though the gold has already been deducted from my locker?",
             answer:
-              "The withdrawal is being processed. It may take some time for the amount to reach your bank account. Use in-app troubleshooting to check the status.",
+              "Withdrawal processing can take up to **24 hours**. If your withdrawal is still in progress, use the **Troubleshoot** option in the app to check status and resolve the issue.",
             supportActionable: "Through In App Troubleshooting",
             faqContent: "Video",
             deeplink: "https://www.myjar.app/",
@@ -1614,7 +1676,7 @@ export const faqData: FAQCategory[] = [
             question:
               "How long does it take for a withdrawal request to be processed and reach a final status?",
             answer:
-              "Withdrawals are usually processed instantly. For beneficiary bank transfers, it may take 42-78 hours in some cases.",
+              "Withdrawals usually reach a final status within **24 hours**. If your withdrawal hasn't been processed, use the **Troubleshoot** option in the app.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
             comments: "instant, beneficiary, 42-78 hours",
@@ -1624,7 +1686,7 @@ export const faqData: FAQCategory[] = [
             question:
               "Why did my withdrawal fail even though the gold was deducted from my locker?",
             answer:
-              "If your withdrawal failed, the gold will be credited back to your locker. Use in-app troubleshooting for details.",
+              "If your withdrawal failed, the gold will be credited back to your locker. If the **issue persists**, use in-app troubleshooting for details.",
             supportActionable: "Through In App Troubleshooting",
             faqContent: "Text Suffices",
             deeplink: "https://www.myjar.app/",
@@ -1634,7 +1696,7 @@ export const faqData: FAQCategory[] = [
             question:
               "If my withdrawal fails, how long will it take for the gold to be credited back to my Jar locker?",
             answer:
-              "You have a 24-hour window to retry the withdrawal. If it doesn't go through, the amount will be settled within 48 hours of the transaction.",
+              "If your withdrawal fails, the gold will be credited back to your locker within **24 hours**.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
             comments:
@@ -1656,7 +1718,7 @@ export const faqData: FAQCategory[] = [
             answer:
               "If you're unable to add a new UPI ID, it may be due to a name mismatch with your KYC details. Use the in-app troubleshooting to request adding a new UPI ID.",
             supportActionable: "Through In App Troubleshooting",
-            faqContent: "Text Suffices",
+            faqContent: "GIF",
             deeplink: "https://www.myjar.app/",
             comments: "Add Related Topics",
           },
@@ -1665,8 +1727,8 @@ export const faqData: FAQCategory[] = [
             question:
               "I lost my SIM card and cannot log in to my Jar account. How can I withdraw my savings from my Jar wallet?",
             answer:
-              "If you've lost your SIM card, get a replacement SIM with the same number from your telecom provider. Once you have the same number active, you can log back into Jar and access your savings.",
-            supportActionable: "Solved by FAQ",
+              "If you've lost your SIM card, get a replacement SIM with the same number from your telecom provider. Once you have the same number active, you can log back into Jar and access your savings. If you need immediate assistance, contact us at **voc@changejar.in**.",
+            supportActionable: "Support Required",
             faqContent: "Text Suffices",
           },
         ],
@@ -1687,7 +1749,7 @@ export const faqData: FAQCategory[] = [
             id: "how-receive-rewards",
             question: "How will I receive my rewards?",
             answer:
-              "Your referral rewards are automatically credited to your Jar account once the referred person meets the eligibility criteria.",
+              "When you **invite** friends to Jar, you **earn rewards** that are credited **directly** to your **locker** and can be **withdrawn anytime**.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -1703,7 +1765,7 @@ export const faqData: FAQCategory[] = [
             id: "where-rewards-credited",
             question: "Where will my rewards be credited?",
             answer:
-              "Your referral rewards will be credited directly to your Jar account as digital gold or reward balance.",
+              "Your **rewards** are credited **instantly** **within** your Jar locker as digital gold and can be withdrawn anytime.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -1712,7 +1774,7 @@ export const faqData: FAQCategory[] = [
             question:
               "I successfully referred someone but did not receive the reward. Why?",
             answer:
-              "If you didn't receive your referral reward, it could be because the referred person hasn't met the eligibility criteria yet, or there might be a processing delay. Please contact support with the referral details.",
+              "If you didn't receive your referral reward, it could be because the referred person hasn't met the eligibility criteria yet, or there might be a processing delay. **Contact Jar Support** at **voc@changejar.in** with the referral details.",
             supportActionable: "Support Required",
             faqContent: "Text Suffices",
             comments:
@@ -1736,7 +1798,7 @@ export const faqData: FAQCategory[] = [
             id: "what-is-weekly-magic",
             question: "What is Weekly Magic?",
             answer:
-              "Weekly Magic is a rewards feature on Jar where you can win prizes by completing savings tasks during the week.",
+              "**Weekly Magic** is a rewards feature on Jar where you can win prizes by completing savings tasks during the week. Check the **home screen** for your Weekly Magic progress.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -1753,7 +1815,7 @@ export const faqData: FAQCategory[] = [
             id: "check-weekly-magic",
             question: "Where can I check my Weekly Magic reward?",
             answer:
-              "Check your Weekly Magic rewards in the Rewards section of the Jar app.",
+              "Check your Weekly Magic rewards in the **Transactions** section of the Jar app.",
             supportActionable: "In App Redirection",
             faqContent: "Text Suffices",
             deeplink: "https://www.myjar.app/",
@@ -1763,7 +1825,7 @@ export const faqData: FAQCategory[] = [
             question:
               "What should I do if I've completed my Weekly Magic but didn't get the reward?",
             answer:
-              "If you completed Weekly Magic but didn't receive the reward, please contact our support team with the details.",
+              "If you completed Weekly Magic but didn't receive the reward, please **Contact Jar Support** at **voc@changejar.in** with the details.",
             supportActionable: "Support Required",
             faqContent: "Text Suffices",
           },
@@ -1777,7 +1839,7 @@ export const faqData: FAQCategory[] = [
             id: "how-get-spins",
             question: "How will I get spins?",
             answer:
-              "You earn spins by saving on Jar, completing tasks, or through promotional offers. Each savings transaction may earn you spins to play.",
+              "You earn spins through **Spin to Win** on **Jar's home screen**. Each savings transaction may earn you up to **5 spins** to play.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -1809,7 +1871,7 @@ export const faqData: FAQCategory[] = [
             id: "see-spin-coupons",
             question: "Where can I see the coupons I won while playing spins?",
             answer:
-              "You can see your won coupons in the Rewards or Coupons section of the Jar app.",
+              "You can see your won coupons by tapping the **Profile icon** > **Rewards** > **Offers** in the Jar app.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -1817,7 +1879,7 @@ export const faqData: FAQCategory[] = [
             id: "withdraw-spin-rewards",
             question: "Can I withdraw the rewards I got in spins?",
             answer:
-              "Spin rewards like digital gold can be withdrawn like regular savings. Coupons and vouchers can be redeemed as per their terms.",
+              "**No**, spin rewards **cannot** be withdrawn directly. **Spin to Win** rewards are added to your locker and can be used for savings.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -1854,7 +1916,7 @@ export const faqData: FAQCategory[] = [
             id: "get-more-winnings",
             question: "How do I get more winnings?",
             answer:
-              "You can earn more winnings by saving regularly, playing spins, completing Weekly Magic challenges, and participating in promotional offers.",
+              "You can earn more winnings by:\n\n• Setting up **Daily Savings** and **Increasing** your **savings amount**\n• **Saving more** regularly through Weekly and Monthly savings\n• Playing **Spin to Win** and completing Weekly Magic challenges",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -1910,7 +1972,7 @@ export const faqData: FAQCategory[] = [
             question:
               "Can I update my name, age, email id or saved addresses?",
             answer:
-              "Yes, you can update your profile details like name, age, email, and addresses from the Profile section in the Jar app.",
+              "Yes, you can update your profile details:\n\n1. Tap the **Profile Icon** at the top left.\n2. Go to **Profile**.\n3. **Choose** the detail you want to update.\n4. Make your changes and tap **Save**.",
             supportActionable: "In App Redirection",
             faqContent: "GIF",
             deeplink: "https://www.myjar.app/",
@@ -1925,7 +1987,7 @@ export const faqData: FAQCategory[] = [
             id: "how-delete-account",
             question: "How do I delete my Jar account?",
             answer:
-              "You can delete your Jar account from the app. Go to Profile > Settings > Delete Account and follow the steps.",
+              "You can delete your Jar account from the app:\n\n1. Go to **Profile** > **Profile Settings** > **Account Deletion**.\n2. Tap **Delete Account** and follow the steps.\n\nNote: Account deletion may take up to **within 60 days** to process.",
             supportActionable: "In App Redirection",
             faqContent: "Text Suffices",
             deeplink: "https://www.myjar.app/",
@@ -1959,7 +2021,7 @@ export const faqData: FAQCategory[] = [
             id: "deletion-time",
             question: "How long does it take to delete the account?",
             answer:
-              "Account deletion is usually processed within 24-48 hours after the request is submitted.",
+              "Account deletion may take **up to 24 hours** after the request is submitted.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -1967,7 +2029,7 @@ export const faqData: FAQCategory[] = [
             id: "delete-through-support",
             question: "Can I delete my account through customer support?",
             answer:
-              "Yes, you can also request account deletion through customer support if you're unable to do it through the app.",
+              "Yes, you can also request account deletion by contacting **Jar Support** at **voc@changejar.in** or through **Contact Jar Support** in the app.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -2007,7 +2069,7 @@ export const faqData: FAQCategory[] = [
             id: "why-sms-permissions",
             question: "Why does Jar ask for SMS permissions?",
             answer:
-              "Jar asks for SMS permissions to detect your online transactions and enable the Round-Off feature, which automatically rounds up your spends and invests the spare change.",
+              "Jar asks for SMS permissions **only** to detect your online transactions and enable the Round-Off feature. You can **opt in** or out at any time.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -2015,7 +2077,7 @@ export const faqData: FAQCategory[] = [
             id: "reads-personal-messages",
             question: "Does Jar reads my personal messages?",
             answer:
-              "No, Jar does not read your personal messages. It only reads transaction-related SMS from banks and payment apps to power the Round-Off feature.",
+              "No, Jar **does not** read your personal messages. It only reads transaction-related SMS from banks and payment apps to power the Round-Off feature.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -2023,7 +2085,7 @@ export const faqData: FAQCategory[] = [
             id: "use-without-sms",
             question: "Can I use Jar without providing SMS permission?",
             answer:
-              "Yes, you can use Jar without SMS permissions. However, the Round-Off feature won't work without it. All other features like Daily Savings, Instant Save, and withdrawals will work normally.",
+              "**Yes**, you can use Jar without SMS permissions. However, the Round-Off feature won't work without it. All other features like Daily Savings, Instant Save, and withdrawals will work normally.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -2045,7 +2107,7 @@ export const faqData: FAQCategory[] = [
             id: "who-is-nominee",
             question: "Who is a nominee?",
             answer:
-              "A nominee is a person you designate to receive your Jar savings in case of any unfortunate event. Adding a nominee ensures your savings are protected.",
+              "A **nominee** is a person you designate to **receive your savings** in case of any unfortunate event. Adding a nominee ensures your savings are protected.",
             supportActionable: "Solved by FAQ",
             faqContent: "Video",
           },
@@ -2061,7 +2123,7 @@ export const faqData: FAQCategory[] = [
             id: "where-add-nominee",
             question: "Where do I add nominee on the Jar?",
             answer:
-              "You can add a nominee from the Profile section in the Jar app. Look for the Nominee option and follow the steps.",
+              "You can add a nominee from the **Profile** section in the Jar app. Tap **Add a Nominee** and follow the steps.\n\n**Note:** You can add only one nominee to your account.",
             supportActionable: "In App Redirection",
             faqContent: "Text Suffices",
             deeplink: "https://www.myjar.app/",
@@ -2070,7 +2132,7 @@ export const faqData: FAQCategory[] = [
             id: "see-nominee",
             question: "Where can I see the nominee?",
             answer:
-              "You can view your nominee details in the Profile > Nominee section of the Jar app.",
+              "You can view your nominee details in **Settings** > **Nominee Details** of the Jar app. Tap **Edit Details** to update.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -2078,7 +2140,7 @@ export const faqData: FAQCategory[] = [
             id: "how-many-nominees",
             question: "How many nominees can I add on my Jar account?",
             answer:
-              "You can add one nominee to your Jar account.",
+              "You can add **one nominee** to your Jar account.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -2117,7 +2179,7 @@ export const faqData: FAQCategory[] = [
             id: "foreclose-loan",
             question: "How do I raise a request to foreclose my loan?",
             answer:
-              "If you have an existing loan, please contact our support team for assistance with foreclosure.",
+              "If you have an existing loan, please **Contact Jar Support** for assistance with foreclosure.",
             supportActionable: "Support Required",
             faqContent: "Text Suffices",
           },
@@ -2125,7 +2187,7 @@ export const faqData: FAQCategory[] = [
             id: "pending-emis",
             question: "How many EMIs are pending for my loan to close?",
             answer:
-              "Please contact our support team to check your pending EMI details.",
+              "Please **Contact Jar Support** to check your pending EMI details.",
             supportActionable: "Support Required",
             faqContent: "Text Suffices",
           },
@@ -2133,7 +2195,7 @@ export const faqData: FAQCategory[] = [
             id: "loan-interest",
             question: "How much interest do I pay for my active loan?",
             answer:
-              "Please contact our support team for details about your loan interest.",
+              "Please **Contact Jar Support** for details about your loan interest.",
             supportActionable: "Support Required",
             faqContent: "Text Suffices",
           },
@@ -2141,7 +2203,7 @@ export const faqData: FAQCategory[] = [
             id: "ongoing-loan-details",
             question: "Where can I see the details of my ongoing loan?",
             answer:
-              "Please contact our support team for details about your ongoing loan.",
+              "Please **Contact Jar Support** for details about your ongoing loan.",
             supportActionable: "Support Required",
             faqContent: "Text Suffices",
           },
@@ -2545,7 +2607,7 @@ export const faqData: FAQCategory[] = [
             id: "what-is-nek",
             question: "What is Nek?",
             answer:
-              "Nek is Jar's jewellery and gold coin delivery platform. You can use your digital gold savings to purchase jewellery, gold coins, and silver products.",
+              "Nek is Jar's jewellery and gold coin delivery platform. You can purchase **BIS-hallmarked 24K gold coins**, **925 silver jewellery**, **22K gold plating**, and **925 silver idols**.",
             supportActionable: "Solved by FAQ",
             faqContent: "Video",
           },
@@ -2554,7 +2616,7 @@ export const faqData: FAQCategory[] = [
             question:
               "Can I buy jewellery from Nek without having Jar Savings?",
             answer:
-              "Yes, you can purchase from Nek using other payment methods like UPI, even without existing Jar savings.",
+              "Yes, you can purchase from Nek using other payment methods like UPI through the **Jar App** or the **Nek App**, even without existing Jar savings.",
             supportActionable: "Solved by FAQ",
             faqContent: "Video",
           },
@@ -2562,7 +2624,7 @@ export const faqData: FAQCategory[] = [
             id: "nek-owned-by-jar",
             question: "Is Nek owned by Jar?",
             answer:
-              "Yes, Nek is a brand by Jar that specializes in jewellery and gold coin delivery.",
+              "Yes, Nek is a brand by **Jar** that specializes in jewellery and gold coin delivery.\n\n**Note:** You need a minimum of **0.1 gram** gold in your Jar savings to **redeem** on Nek.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -2570,7 +2632,7 @@ export const faqData: FAQCategory[] = [
             id: "products-genuine",
             question: "Are your products genuine?",
             answer:
-              "Yes, all Nek products are genuine and come with purity certification. Gold products are 24K (99.99% purity).",
+              "Yes, all Nek products are **100% BIS Hallmarked** and come with purity certification.",
             supportActionable: "Solved by FAQ",
             faqContent: "Video",
           },
@@ -2578,7 +2640,7 @@ export const faqData: FAQCategory[] = [
             id: "nek-viba-same",
             question: "Is Nek and Viba the same brand?",
             answer:
-              "Nek is the current brand name for Jar's jewellery platform. Viba was the previous name.",
+              "**Viba** was the previous name for Jar's jewellery platform, which has been rebranded to **Nek**. They are the same brand.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -2586,7 +2648,7 @@ export const faqData: FAQCategory[] = [
             id: "custom-jewellery",
             question: "Can custom jewellery be ordered from Nek?",
             answer:
-              "Currently, Nek offers a curated collection of jewellery. Custom orders may not be available. Check the app for the latest product offerings.",
+              "Custom jewellery is currently **not available** on Nek. However, we offer a **wide variety** of **hallmarked designs** to choose from.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -2594,7 +2656,7 @@ export const faqData: FAQCategory[] = [
             id: "order-size-limit",
             question: "Is there any limit on the order size?",
             answer:
-              "Order limits depend on the product. Check individual product pages for quantity and order limits.",
+              "Yes, you can order up to **10** **items** per order. The **maximum quantity** per product is **9**.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -2602,7 +2664,7 @@ export const faqData: FAQCategory[] = [
             id: "making-design-charges",
             question: "What are the M&D charges applied?",
             answer:
-              "Making and Design (M&D) charges are applied on jewellery products to cover craftsmanship and design costs. These are clearly shown on each product page.",
+              "**Making charges** cover the cost of craftsmanship and design for jewellery products. **Delivery charges** may also apply based on your location. All charges are clearly shown on each product page.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -2616,7 +2678,15 @@ export const faqData: FAQCategory[] = [
             id: "gold-coin-delivery-time",
             question: "When would my gold coin be delivered?",
             answer:
-              "Gold coins are typically delivered within 7-10 business days after order confirmation. Delivery time may vary by location.",
+              "**Gold coins** are typically delivered within **5 to 9 working days** after order confirmation. Delivery time may vary by **location**.",
+            supportActionable: "Solved by FAQ",
+            faqContent: "Text Suffices",
+          },
+          {
+            id: "how-orders-delivered",
+            question: "How are my orders delivered?",
+            answer:
+              "Orders are delivered through **trusted courier services**. You can track your order in **real time** and view the **estimated delivery timeline** in the app.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -2624,7 +2694,7 @@ export const faqData: FAQCategory[] = [
             id: "track-order",
             question: "How can I track my order?",
             answer:
-              "You can track your order from the Orders section in the Jar app. You'll also receive tracking updates via SMS and notifications.",
+              "You can track your order by tapping **Track Order** in the Orders section of the Jar app. You'll also receive tracking updates via SMS and notifications.",
             supportActionable: "In App Redirection",
             faqContent: "GIF",
             deeplink: "https://www.myjar.app/",
@@ -2633,7 +2703,7 @@ export const faqData: FAQCategory[] = [
             id: "cancel-order",
             question: "How can I cancel my order?",
             answer:
-              "You can cancel your order from the Orders section in the Jar app before it's shipped.",
+              "You can cancel your order from the Orders section in the Jar app.\n\n**Note:** Orders can only be cancelled within **2 hours** of placing them. Go to **Track Order** to find the cancellation option.",
             supportActionable: "In App Redirection",
             faqContent: "GIF",
             deeplink: "https://www.myjar.app/",
@@ -2642,7 +2712,7 @@ export const faqData: FAQCategory[] = [
             id: "when-cancel-order",
             question: "When can I cancel my order?",
             answer:
-              "You can cancel your order before it has been shipped. Once shipped, cancellation may not be possible.",
+              "You can cancel your order **within 2 hours** of placing it. After that, cancellation may not be possible.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -2650,7 +2720,7 @@ export const faqData: FAQCategory[] = [
             id: "unable-cancel-order",
             question: "Why I am not able to cancel the order?",
             answer:
-              "You may not be able to cancel if the order has already been shipped or is being processed for delivery.",
+              "You may not be able to cancel because the **2 hour** cancellation window has **expired**. Once the window passes, orders cannot be cancelled.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -2658,9 +2728,25 @@ export const faqData: FAQCategory[] = [
             id: "return-order",
             question: "How can I return my order?",
             answer:
-              "You can initiate a return from the Orders section in the Jar app within the return window. Check the return policy for specific product return conditions.",
-            supportActionable: "Solved by FAQ",
+              "Returns are available within a **3-day** window from delivery. However, **no return available** for **gold coins** as per policy.",
+            supportActionable: "Support Required",
             faqContent: "GIF",
+          },
+          {
+            id: "order-shows-delivered",
+            question: "My order shows delivered but I haven't received it. What should I do?",
+            answer:
+              "Please check the **tracking details** sent via **SMS** and **email**. Also check with your **neighbors** or **building security**.\n\nIf you still **cannot locate** your order, please contact **Customer Support** within **72 hours** of the **delivery** date.",
+            supportActionable: "Support Required",
+            faqContent: "Text Suffices",
+          },
+          {
+            id: "order-delayed",
+            question: "My order is delayed beyond the expected delivery date. What should I do?",
+            answer:
+              "Orders may be delayed due to **high order volumes**, **weather conditions**, or **courier issues**. Try **checking** the **tracking link** sent via **SMS** and **email** for **latest updates**.\n\nIf your order is **delayed beyond** the expected date, please contact **Customer Support** for assistance.",
+            supportActionable: "Support Required",
+            faqContent: "Text Suffices",
           },
         ],
       },
@@ -2672,7 +2758,7 @@ export const faqData: FAQCategory[] = [
             id: "nek-payment-options",
             question: "What are the available payment options?",
             answer:
-              "You can pay using your Jar Gold savings, UPI, or a combination of both.",
+              "You can pay using **UPI**, **Jar savings**, or **Cash on Delivery (COD)**.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -2681,7 +2767,7 @@ export const faqData: FAQCategory[] = [
             question:
               "Can I use my credit card for ordering from Nek?",
             answer:
-              "Currently, Nek primarily supports UPI and Jar Gold savings as payment methods. Credit card support may be limited.",
+              "You can use a **UPI-enabled RuPay credit card** through your **preferred UPI app**. However, **other card networks** like Visa and Mastercard are **not supported** at this time.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -2690,9 +2776,9 @@ export const faqData: FAQCategory[] = [
             question:
               "I am not able to use my Jar Savings for the purchase. What do I do?",
             answer:
-              "Ensure your KYC is complete and your savings are not locked due to recent transactions. If the issue persists, contact support.",
-            supportActionable: "Solved by FAQ",
-            faqContent: "Text Suffices",
+              "To use your Jar savings on Nek:\n\n1. Open the **Jar app** and tap **Withdraw**.\n2. Select **24K Standard Gold Coins** or **Exclusive Silver Jewellery**.\n3. This will redirect you to **Nek**.\n4. Add items to your **cart** and select **Jar savings** as payment method.\n\n**Note:** You need a **minimum** of **0.1 gm** gold in your **Jar savings** to use this option. If the issue persists, contact support.",
+            supportActionable: "Support Required",
+            faqContent: "GIF",
           },
         ],
       },
