@@ -43,10 +43,11 @@ export default function Home() {
       <div className="max-w-5xl mx-auto px-4 pb-12 space-y-10">
 
         {/* Trust Section */}
+        {/* Trust Section */}
         <TrustSection />
 
         {/* Browse Topics */}
-        <section>
+        <section className="-mt-6">
           <h2 className="text-lg font-bold text-gray-900 mb-4">Browse Topics</h2>
           <div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-5 gap-3">
             {browseTopics.map((cat) => (

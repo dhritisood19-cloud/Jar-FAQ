@@ -3,7 +3,11 @@ import { notFound } from "next/navigation";
 import { faqData, findQuestionById, getRelatedQuestions } from "../../../data/faqData";
 import AudioPlayer from "../../../components/AudioPlayer";
 import FeedbackWidget from "../../../components/FeedbackWidget";
-import { ChevronRightIcon, PlayArrowIcon, OpenInNewIcon, PhoneInTalkIcon, ChatBubbleOutlineIcon } from "../../../components/Icons";
+import RichText from "../../../components/RichText";
+import { YouTubeEmbed, GifEmbed } from "../../../components/MediaEmbed";
+import { ChevronRightIcon, OpenInNewIcon, PhoneInTalkIcon, ChatBubbleOutlineIcon } from "../../../components/Icons";
+
+const PLACEHOLDER_VIDEO = "https://www.youtube.com/watch?v=2p5tgCAE4EI&t=4s";
 
 export function generateStaticParams() {
   const params: { categorySlug: string; questionSlug: string }[] = [];
@@ -28,6 +32,7 @@ export default async function AnswerPage({
 
   const { question, category, subcategory } = found;
   const related = getRelatedQuestions(questionSlug, 4);
+  const contentType = question.faqContent || "Text Suffices";
 
   return (
     <main className="flex-1">
@@ -51,21 +56,23 @@ export default async function AnswerPage({
 
         {/* Answer */}
         <div className="rounded-2xl p-6 mb-6 bg-gray-50 border border-gray-100">
-          <div className="text-sm leading-relaxed whitespace-pre-line text-gray-700">{question.answer}</div>
+          <div className="text-sm leading-relaxed whitespace-pre-line text-gray-700">
+            <RichText text={question.answer} />
+          </div>
         </div>
 
-        {/* Video */}
-        <div className="rounded-2xl p-5 flex items-center gap-4 mb-6 bg-violet-50 border border-violet-100">
-          <div className="w-14 h-14 rounded-xl flex items-center justify-center shadow-sm flex-shrink-0 bg-white">
-            <PlayArrowIcon sx={{ fontSize: 28, color: "#7C3AED" }} />
+        {/* Media: Video or GIF based on faqContent */}
+        {contentType === "Video" && (
+          <div className="mb-6">
+            <YouTubeEmbed url={PLACEHOLDER_VIDEO} />
           </div>
-          <div>
-            <p className="text-sm font-semibold text-gray-800">Watch related video</p>
-            <a href="https://wiki.myjar.app/hi/help-videos/" target="_blank" rel="noopener noreferrer" className="text-xs font-medium text-violet-600 hover:text-violet-700">
-              View on Jar Help Videos &rarr;
-            </a>
+        )}
+
+        {contentType === "GIF" && (
+          <div className="mb-6">
+            <GifEmbed />
           </div>
-        </div>
+        )}
 
         {/* In-App CTA */}
         {(question.supportActionable === "In App Redirection" || question.supportActionable === "Through In App Troubleshooting") && question.deeplink && (
