@@ -642,7 +642,7 @@ export const faqData: FAQCategory[] = [
             id: "what-is-digital-silver",
             question: "What is Digital Silver?",
             answer:
-              "Digital Silver is a way to invest in pure silver digitally through the Jar app. For every amount you invest, an equivalent amount of pure silver is securely stored in your name in Brink's vaults.",
+              "Digital silver is a simple way to invest in precious metals. You can start saving from just ₹10, and for every amount you invest, an equivalent amount of pure silver is securely stored in your name in BRINK vaults",
             supportActionable: "Solved by FAQ",
             faqContent: "Video",
           },
@@ -651,7 +651,7 @@ export const faqData: FAQCategory[] = [
             question:
               "Why should I buy digital silver instead of physical silver?",
             answer:
-              "Digital silver eliminates the hassle of storage, security, and making charges. You can invest small amounts, track value in real-time, and convert to physical silver whenever you want.",
+              "Digital silver let you invest without worrying about storage, safety, or making charges. You can buy small amounts anytime, track value in real-time, and still convert it into physical gold/silver whenever you want.\n\n- Start small – Invest from just ₹10\n- No making charges\n- Zero storage cost – Stored securely at no extra charge\n- High purity – 999 Fine Silver (99.99%)\n- Easy access – Buy, track, sell, or withdraw anytime",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -660,7 +660,7 @@ export const faqData: FAQCategory[] = [
             question:
               "Where is my digital silver stored? Is it stored safely?",
             answer:
-              "Your digital silver is stored in secure Brink's vaults with bank-grade security, 24×7 monitoring, and independent oversight by Vistra.",
+              "Your silver is stored in secure **Brink's vaults**, one of the **world's leading** vault providers that offer -\n\n- Bank-grade security infrastructure\n- 24×7 monitored vaults\n- Stored under your name\n\nThe storage is independently monitored by **Vistra**, ensuring your holdings are always safe and cannot be accessed without your consent.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -668,7 +668,7 @@ export const faqData: FAQCategory[] = [
             id: "silver-savings-safe",
             question: "Is my savings safe with Jar?",
             answer:
-              "Yes, your savings are completely safe. Your silver is stored in insured Brink's vaults with 24×7 monitoring and independent oversight by Vistra.",
+              "Yes, they 100% safe with Jar. Your silver is stored in secure **Brink's vaults**, one of the **world's leading** vault providers that offer -\n\n- Bank-grade security infrastructure\n- 24×7 monitored vaults\n- Stored under your name\n\nThe storage is independently monitored by **Vistra**, ensuring your holdings are always safe and cannot be accessed without your consent.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -676,7 +676,7 @@ export const faqData: FAQCategory[] = [
             id: "live-silver-price",
             question: "Where can I find the live silver price?",
             answer:
-              "You can find the live silver price on the Jar app home screen or in the Silver section. Prices are updated in real-time based on market rates.",
+              "The live silver price is displayed at the top right corner of the Silver Savings screen, which you can access from the Jar app home screen.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -684,7 +684,7 @@ export const faqData: FAQCategory[] = [
             id: "silver-not-showing-home",
             question: "Why isn't my Silver savings showing in the Home screen?",
             answer:
-              "If your Silver savings aren't showing on the Home screen, try refreshing the app or switching to the Silver tab. If the issue persists, contact support.",
+              "Your silver savings are currently visible only on the Silver Savings screen. Don't worry, we're working on an update to soon show your silver savings along with your total Jar savings on the home screen.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -698,7 +698,7 @@ export const faqData: FAQCategory[] = [
             id: "how-save-jar-silver",
             question: "How can I save in Jar Silver?",
             answer:
-              "You can save in Jar Silver by opening the Silver section in the app and making a one-time purchase or setting up Daily Savings for silver.",
+              "Saving in Jar is simple and flexible. You can save in 999 pure digital silver either manually anytime with Instant Buy, or automatically with Daily Savings. All your savings are securely stored in digital silver, and their value can grow as silver prices increase over time.",
             supportActionable: "In App Redirection",
             faqContent: "Text Suffices",
             deeplink: "https://www.myjar.app/",
@@ -707,7 +707,7 @@ export const faqData: FAQCategory[] = [
             id: "what-is-one-time-savings",
             question: "What is One-time Savings?",
             answer:
-              "One-time Savings allows you to make a single, instant investment in digital silver without setting up a recurring plan.",
+              "With One-time Savings, you can buy digital silver instantly, anytime and for any amount. Simply tap the Buy Now in the Silver Savings section to get started.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -715,7 +715,7 @@ export const faqData: FAQCategory[] = [
             id: "purchase-silver-manually",
             question: "How can I purchase silver manually on Jar?",
             answer:
-              "Open the Jar app, go to the Silver section, enter the amount you want to invest, and complete the payment via UPI.",
+              "To buy silver:\n\n1. Open the Jar app\n2. Tap the Silver Savings card on the home screen\n3. Tap Buy Now\n4. Enter the amount\n5. Tap Continue",
             supportActionable: "In App Redirection",
             faqContent: "Text Suffices",
             deeplink: "https://www.myjar.app/",
@@ -724,7 +724,7 @@ export const faqData: FAQCategory[] = [
             id: "silver-min-max",
             question: "What is the minimum & maximum amount I can save?",
             answer:
-              "You can save a minimum of ₹10 in digital silver. Check the app for the current maximum limit.",
+              "The minimum amount you can invest in manual savings is ₹10 and the maximum amount you can invest is ₹1,00,000.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -732,7 +732,7 @@ export const faqData: FAQCategory[] = [
             id: "daily-savings-silver",
             question: "Can I set up Daily Savings for Silver on Jar?",
             answer:
-              "Yes, you can set up Daily Savings for Silver. Go to the Silver section in the app and choose the Daily Savings option.",
+              "You can set up Daily Savings for Silver only if you have an active Daily Savings plan for digital gold of more than ₹50.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -741,7 +741,7 @@ export const faqData: FAQCategory[] = [
             question:
               "Do we have options to setup up weekly and monthly savings for Silver on Jar?",
             answer:
-              "Currently, weekly and monthly savings options for Silver may be limited. Check the app for the latest available savings plans for Silver.",
+              "No, currently we don't have options to set up Weekly and Monthly Savings for Silver on Jar.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -756,7 +756,7 @@ export const faqData: FAQCategory[] = [
             question:
               "Why is there a difference between buying and selling price of silver?",
             answer:
-              "The difference is due to market spread, operational costs (storage, insurance, processing), and GST on buying. This is standard in precious metals trading.",
+              "The difference between buy and sell price is called the price spread, and it is a standard part of digital gold/silver investing.\n\n**Market spread** - Silver is bought from and sold in the wholesale bullion market, where buyback prices are slightly lower than selling prices\n**GST on buying** - 3% GST is applied when you buy gold/silver, but not when you sell\n**Operational costs** - Includes secure storage, insurance, trustee oversight, and payment processing\n\nJar always shows you the final buy and sell price upfront, so you can make informed decisions with full transparency.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -765,7 +765,7 @@ export const faqData: FAQCategory[] = [
             question:
               "Is there any additional charges applied while buying silver?",
             answer:
-              "A 3% GST is applied when you buy digital silver, as mandated by the government. Jar does not charge any additional commission.",
+              "No, The only charge you need to pay is 3% GST paid to government when you buy digital silver. Jar does not charge any additional commission.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -774,7 +774,7 @@ export const faqData: FAQCategory[] = [
             question:
               "Why there is a difference in Current vs Invested Value?",
             answer:
-              "The difference reflects changes in silver market prices. Your current value is based on live rates and may be higher or lower than your invested amount.",
+              "The difference is due to changes in silver prices over time.\n\n**Invested Value** - Total amount you've invested\n**Current Value** - Latest value based on live market prices\n\nSince gold and silver prices fluctuate daily, your current value may be higher or lower than what you invested.\n\nThis is normal and reflects how your investment is performing in real time.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -789,7 +789,7 @@ export const faqData: FAQCategory[] = [
             question:
               "Why is my silver purchase pending even after a successful payment?",
             answer:
-              "We apologize that your silver purchase has not been reflected in your locker yet. This may be due to an issue on our partner's side. We keep actively retrying from our end and the status will be updated within 24-72 hours. Don't worry, your money is safe with us.",
+              "We are apologe for the delay. This can occasionally happen due to a partner-side issue. Don't worry, your money is safe with us.\n\nWe're actively retrying, and your purchase should reflect in the locker within **24–72 hours**. You can also tap **Troubleshoot** to instantly recheck the status.",
             supportActionable: "Through In App Troubleshooting",
             faqContent: "GIF",
             deeplink: "https://www.myjar.app/",
@@ -799,7 +799,7 @@ export const faqData: FAQCategory[] = [
             question:
               "Why is my silver purchase marked as failed after a successful payment?",
             answer:
-              "We apologize that your silver purchase has not been reflected in your locker yet. This may be due to an issue on our partner's side. We keep actively retrying from our end and the status will be updated within 24-72 hours. Don't worry, your money is safe with us.",
+              "Sorry for the confusion, we understand your concern. This may happen due to a temporary partner-side issue. Don't worry, your money is safe with us. We're retrying from our end, and the status should update within **24–72 hours**. You can tap **Troubleshoot** to retry and refresh the status.",
             supportActionable: "Through In App Troubleshooting",
             faqContent: "GIF",
             deeplink: "https://www.myjar.app/",
@@ -808,7 +808,7 @@ export const faqData: FAQCategory[] = [
             id: "silver-payment-in-progress",
             question: "Why my payment status is in progress?",
             answer:
-              "We apologize that your payment has not been successful yet. This may be due to bank issues. We will update the status in 24-72 hours. If your payment fails, your money will be sent back to your bank account. Don't worry, your money is safe with us.",
+              "Sorry for the delay. This is usually due to a temporary issue with your bank. Don't worry, your money is safe. The status will update within **24–72 hours**. You can also tap **Troubleshoot** to instantly recheck the payment status. If it fails, the amount will be refunded automatically.",
             supportActionable: "Through In App Troubleshooting",
             faqContent: "GIF",
             deeplink: "https://www.myjar.app/",
@@ -817,9 +817,18 @@ export const faqData: FAQCategory[] = [
             id: "silver-payment-failed",
             question: "Why my payment status is failed?",
             answer:
-              "We apologize that your payment has failed due to bank issues. We will update the status in 24-72 hours. If any money is deducted, it will be sent back to your bank account. Don't worry, your money is safe with us.",
+              "This usually happens due to an issue at your bank's end. Don't worry, no money is deducted for failed transactions. If any amount is deducted, it will be refunded to your bank account within **24–72 hours**. Your money is safe.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
+          },
+          {
+            id: "silver-download-invoice",
+            question: "How can I download the invoice for my silver savings and withdrawals?",
+            answer:
+              "To download your invoice:\n\n1. Open the Jar app\n2. Tap the Silver Savings card on the home screen\n3. Scroll down to Recent Transactions\n4. Select the transaction you want\n5. Tap Download Invoice",
+            supportActionable: "In App Redirection",
+            faqContent: "Text Suffices",
+            deeplink: "https://www.myjar.app/",
           },
         ],
       },
@@ -831,7 +840,7 @@ export const faqData: FAQCategory[] = [
             id: "silver-withdrawal-ways",
             question: "What are the different ways in which I can withdraw?",
             answer:
-              "You can withdraw your silver savings as cash to your bank account via UPI.",
+              "There are 3 ways to withdraw your savings:\n\n1. Withdraw savings in your Bank Account. (Note: No Charges are applied)\n2. Use your Jar savings to purchase Gold Coins.\n3. Use your Jar savings to purchase Jewellery through Nek",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -839,7 +848,7 @@ export const faqData: FAQCategory[] = [
             id: "silver-withdraw-bank",
             question: "How can I withdraw my savings in my bank account?",
             answer:
-              "Go to the Silver section in the Jar app, tap Withdraw, enter the amount, select your UPI ID, and confirm.",
+              "To withdraw your savings:\n\n1. Open the Jar app and tap the Silver Savings card on the home screen\n2. Tap Withdraw\n3. Select Withdraw to Bank Account\n4. Enter the amount and tap Proceed\n5. Select the UPI ID where you want to receive the money\n6. Tap Proceed\n\nThe amount will be automatically transferred to your bank account.",
             supportActionable: "In App Redirection",
             faqContent: "Text Suffices",
             deeplink: "https://www.myjar.app/",
@@ -880,7 +889,7 @@ export const faqData: FAQCategory[] = [
             question:
               "Why is my withdrawal still in progress even though the silver has been deducted from my locker?",
             answer:
-              "This generally happens if there is any bank server issue. This will be resolved within 24-72 hours. Please do not worry, your money is safe with Jar.",
+              "We are apologe for the delay. This can occasionally happen due to server issues with your bank. Don't worry, your money is safe.\n\nWe're actively retrying, and your withdrawn amount should reflect in your bank account within **48-72 hours**. You can also tap **Troubleshoot** to instantly recheck the status.",
             supportActionable: "Through In App Troubleshooting",
             faqContent: "GIF",
             deeplink: "https://www.myjar.app/",
@@ -890,9 +899,9 @@ export const faqData: FAQCategory[] = [
             question:
               "How long does it take for my withdrawal to reach a final status?",
             answer:
-              "Withdrawals are usually instant. In rare cases where your bank's servers are slow, it can take up to 48 hours. Don't worry your savings are safe with jar.",
+              "Withdrawals are usually instant. In rare occassions this can happen due to server issues with your bank. Don't worry, your money is safe.\n\nWe're actively retrying, and your withdrawn amount should reflect in your bank account within **48-72 hours**. You can also tap **Troubleshoot** to instantly recheck the status.",
             supportActionable: "Through In App Troubleshooting",
-            faqContent: "Text Suffices",
+            faqContent: "GIF",
             deeplink: "https://www.myjar.app/",
           },
           {
@@ -900,37 +909,10 @@ export const faqData: FAQCategory[] = [
             question:
               "Why did my withdrawal fail even though the silver was deducted from my locker?",
             answer:
-              "\"This might be due to any of the following reasons:\n\n1. Bank server issues\n2. Invalid UPI ID\n3. Closed Bank Account",
+              "This may be due to:\n\n1. Temporary bank server issues\n2. An invalid UPI ID\n3. A closed or inactive bank account\n\nIf the **issue persists**, please try again or use a different UPI ID.",
             supportActionable: "Through In App Troubleshooting",
             faqContent: "GIF",
             deeplink: "https://www.myjar.app/",
-          },
-          {
-            id: "silver-withdrawal-refund-time",
-            question:
-              "How long does it take for silver to be added back to my locker after a failed withdrawal?",
-            answer:
-              "Not Applicable",
-            supportActionable: "Through In App Troubleshooting",
-            faqContent: "GIF",
-            deeplink: "https://www.myjar.app/",
-          },
-          {
-            id: "silver-withdrawal-credit-back",
-            question:
-              "When will the amount be credited back to my source account?",
-            answer:
-              "Not Applicable",
-            supportActionable: "Solved by FAQ",
-            faqContent: "Text Suffices",
-          },
-          {
-            id: "why-kyc-silver",
-            question: "Why should I do KYC/ID verification? Why is it necessary?",
-            answer:
-              "KYC helps keep your **account** and **savings secure**. It allows us to verify your identity, prevent fraud, and protect your funds.\n\nCompleting KYC allows you to **withdraw more than ₹30** at a time. Additonally, with **PAN KYC**, you can save beyond **₹1.5 lakh** in a financial year.",
-            supportActionable: "Solved by FAQ",
-            faqContent: "Text Suffices",
           },
         ],
       },
