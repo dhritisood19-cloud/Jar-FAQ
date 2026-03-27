@@ -5,7 +5,7 @@ import AudioPlayer from "../../../components/AudioPlayer";
 import FeedbackWidget from "../../../components/FeedbackWidget";
 import RichText from "../../../components/RichText";
 import { YouTubeEmbed, GifEmbed } from "../../../components/MediaEmbed";
-import { ChevronRightIcon, OpenInNewIcon, PhoneInTalkIcon, ChatBubbleOutlineIcon } from "../../../components/Icons";
+import { ChevronRightIcon, OpenInNewIcon, ChatBubbleOutlineIcon } from "../../../components/Icons";
 
 const PLACEHOLDER_VIDEO = "https://www.youtube.com/watch?v=2p5tgCAE4EI&t=4s";
 
@@ -86,24 +86,10 @@ export default async function AnswerPage({
 
         {/* Support Required */}
         {question.supportActionable === "Support Required" && (
-          <div className="mb-6 rounded-2xl p-5 bg-red-50 border border-red-100">
-            <div className="flex items-start gap-3">
-              <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 bg-red-100">
-                <PhoneInTalkIcon sx={{ fontSize: 22, color: "#EF4444" }} />
-              </div>
-              <div>
-                <p className="text-sm font-semibold text-gray-800">This requires support assistance</p>
-                <p className="text-xs mt-1 mb-3 text-red-600">Please contact our team for help with this issue.</p>
-                <div className="flex gap-2">
-                  <a href="https://www.myjar.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 px-4 py-2 text-xs font-medium rounded-xl bg-red-500 text-white hover:bg-red-600">
-                    <ChatBubbleOutlineIcon sx={{ fontSize: 14 }} /> Chat with Support
-                  </a>
-                  <a href="https://www.myjar.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 px-4 py-2 text-xs font-medium rounded-xl bg-white text-red-600 border border-red-200 hover:bg-red-50">
-                    <PhoneInTalkIcon sx={{ fontSize: 14 }} /> Call Support
-                  </a>
-                </div>
-              </div>
-            </div>
+          <div className="mb-6">
+            <a href="https://www.myjar.app/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 w-full py-3.5 font-semibold rounded-2xl text-sm bg-red-500 text-white hover:bg-red-600 transition-colors">
+              <ChatBubbleOutlineIcon sx={{ fontSize: 18 }} /> Contact Jar Support
+            </a>
           </div>
         )}
 
