@@ -6,12 +6,22 @@ import TroubleshootingEntry from "./components/TroubleshootingEntry";
 import TopIssues from "./components/TopIssues";
 import { faqData } from "./data/faqData";
 import CategoryIcon from "./components/CategoryIcon";
+import { categoryColors } from "./components/categoryColors";
 import TrustSection from "./components/TrustSection";
 
 const browseTopicIds = [
   "kyc", "upi-id", "payments-savings", "autopay-subscription",
   "withdrawal", "refer-earn", "rewards", "profile", "nominee",
 ];
+
+const topicDescriptions: Record<string, string> = {
+  "upi-id": "Primary UPI · Manage or Add IDs",
+  "payments-savings": "Status · History · Statements & more",
+  "autopay-subscription": "Start · Pause · Resume · Plans",
+  "withdrawal": "Troubleshoot Issues",
+  "refer-earn": "Invite Friends · Earn Rewards",
+};
+
 
 const browseProductIds = [
   "jar", "jar-gold", "jar-silver", "loans", "nek", "jar-pay",
@@ -46,43 +56,103 @@ export default function Home() {
         {/* Trust Section */}
         <TrustSection />
 
-        {/* Browse Topics */}
+        {/* Browse Topics — Mixed Bento */}
         <section className="-mt-6">
           <h2 className="text-lg font-bold text-gray-900 mb-4">Browse Topics</h2>
-          <div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-5 gap-3">
-            {browseTopics.map((cat) => (
-              <Link
-                key={cat.id}
-                href={`/category/${cat.id}`}
-                className="glass-card flex flex-col items-center p-5 rounded-2xl text-center transition-all cursor-pointer"
-              >
-                <div className="mb-3"><CategoryIcon categoryId={cat.id} /></div>
-                <p className="text-xs font-semibold text-gray-800 leading-tight">{cat.faqCategory}</p>
-              </Link>
-            ))}
-            <Link
-              href="/category/nek/sub/tracking-delivery"
-              className="glass-card flex flex-col items-center p-5 rounded-2xl text-center transition-all cursor-pointer"
-            >
-              <div className="mb-3"><CategoryIcon categoryId="nek-delivery" /></div>
-              <p className="text-xs font-semibold text-gray-800 leading-tight">Nek Delivery</p>
+          <div className="grid grid-cols-4 gap-2.5">
+            {/* Row 1: 2-col + 2-col */}
+            {(["upi-id", "payments-savings"] as const).map((id) => {
+              const cat = browseTopics.find((c) => c.id === id)!;
+              const cc = categoryColors[cat.id];
+              return (
+                <Link key={cat.id} href={`/category/${cat.id}`} className="group bento-card col-span-2 glass-card flex items-center gap-3 px-4 py-3.5 rounded-2xl transition-all cursor-pointer" style={{ "--cat-bg": cc.bg, "--cat-color": cc.color } as React.CSSProperties}>
+                  <div className="flex-shrink-0"><CategoryIcon categoryId={cat.id} /></div>
+                  <div>
+                    <p className="text-[13px] font-semibold text-gray-800">{cat.faqCategory}</p>
+                    <p className="text-[11px] text-gray-400 mt-0.5 leading-tight">{topicDescriptions[cat.id]}</p>
+                  </div>
+                </Link>
+              );
+            })}
+
+            {/* Row 2: 2-col + 1-col + 1-col */}
+            {(() => {
+              const cat = browseTopics.find((c) => c.id === "withdrawal")!;
+              const cc = categoryColors[cat.id];
+              return (
+                <Link key={cat.id} href={`/category/${cat.id}`} className="group bento-card col-span-2 glass-card flex items-center gap-3 px-4 py-3.5 rounded-2xl transition-all cursor-pointer" style={{ "--cat-bg": cc.bg, "--cat-color": cc.color } as React.CSSProperties}>
+                  <div className="flex-shrink-0"><CategoryIcon categoryId={cat.id} /></div>
+                  <div>
+                    <p className="text-[13px] font-semibold text-gray-800">{cat.faqCategory}</p>
+                    <p className="text-[11px] text-gray-400 mt-0.5 leading-tight">{topicDescriptions[cat.id]}</p>
+                  </div>
+                </Link>
+              );
+            })()}
+            {(["kyc", "rewards"] as const).map((id) => {
+              const cat = browseTopics.find((c) => c.id === id)!;
+              const cc = categoryColors[cat.id];
+              return (
+                <Link key={cat.id} href={`/category/${cat.id}`} className="group bento-card col-span-1 glass-card flex flex-col items-center justify-center py-4 px-2 rounded-2xl text-center transition-all cursor-pointer" style={{ "--cat-bg": cc.bg, "--cat-color": cc.color } as React.CSSProperties}>
+                  <div className="mb-2"><CategoryIcon categoryId={cat.id} /></div>
+                  <p className="text-[11px] font-semibold text-gray-700 leading-tight">{cat.faqCategory}</p>
+                </Link>
+              );
+            })}
+
+            {/* Row 3: 1-col + 1-col + 2-col */}
+            {(["profile", "nominee"] as const).map((id) => {
+              const cat = browseTopics.find((c) => c.id === id)!;
+              const cc = categoryColors[cat.id];
+              return (
+                <Link key={cat.id} href={`/category/${cat.id}`} className="group bento-card col-span-1 glass-card flex flex-col items-center justify-center py-4 px-2 rounded-2xl text-center transition-all cursor-pointer" style={{ "--cat-bg": cc.bg, "--cat-color": cc.color } as React.CSSProperties}>
+                  <div className="mb-2"><CategoryIcon categoryId={cat.id} /></div>
+                  <p className="text-[11px] font-semibold text-gray-700 leading-tight">{cat.faqCategory}</p>
+                </Link>
+              );
+            })}
+            {(() => {
+              const cat = browseTopics.find((c) => c.id === "autopay-subscription")!;
+              const cc = categoryColors[cat.id];
+              return (
+                <Link key={cat.id} href={`/category/${cat.id}`} className="group bento-card col-span-2 glass-card flex items-center gap-3 px-4 py-3.5 rounded-2xl transition-all cursor-pointer" style={{ "--cat-bg": cc.bg, "--cat-color": cc.color } as React.CSSProperties}>
+                  <div className="flex-shrink-0"><CategoryIcon categoryId={cat.id} /></div>
+                  <div>
+                    <p className="text-[13px] font-semibold text-gray-800">{cat.faqCategory}</p>
+                    <p className="text-[11px] text-gray-400 mt-0.5 leading-tight">{topicDescriptions[cat.id]}</p>
+                  </div>
+                </Link>
+              );
+            })()}
+
+            {/* Row 4: 2-col + 1-col + 1-col */}
+            {(() => {
+              const cat = browseTopics.find((c) => c.id === "refer-earn")!;
+              const cc = categoryColors[cat.id];
+              return (
+                <Link key={cat.id} href={`/category/${cat.id}`} className="group bento-card col-span-2 glass-card flex items-center gap-3 px-4 py-3.5 rounded-2xl transition-all cursor-pointer" style={{ "--cat-bg": cc.bg, "--cat-color": cc.color } as React.CSSProperties}>
+                  <div className="flex-shrink-0"><CategoryIcon categoryId={cat.id} /></div>
+                  <div>
+                    <p className="text-[13px] font-semibold text-gray-800">{cat.faqCategory}</p>
+                    <p className="text-[11px] text-gray-400 mt-0.5 leading-tight">{topicDescriptions[cat.id]}</p>
+                  </div>
+                </Link>
+              );
+            })()}
+            <Link href="/category/nek/sub/tracking-delivery" className="group bento-card col-span-1 glass-card flex flex-col items-center justify-center py-4 px-2 rounded-2xl text-center transition-all cursor-pointer" style={{ "--cat-bg": categoryColors["nek-delivery"].bg, "--cat-color": categoryColors["nek-delivery"].color } as React.CSSProperties}>
+              <div className="mb-2"><CategoryIcon categoryId="nek-delivery" /></div>
+              <p className="text-[11px] font-semibold text-gray-700 leading-tight">Nek Delivery</p>
             </Link>
-            <a
-              href="https://www.upihelp.npci.org.in/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="glass-card flex flex-col items-center p-5 rounded-2xl text-center transition-all cursor-pointer"
-            >
-              <div className="mb-3"><CategoryIcon categoryId="upi-help" /></div>
-              <p className="text-xs font-semibold text-gray-800 leading-tight">UPI Help</p>
+            <Link href="/category/report-fraud" className="group bento-card col-span-1 glass-card flex flex-col items-center justify-center py-4 px-2 rounded-2xl text-center transition-all cursor-pointer" style={{ "--cat-bg": categoryColors["report-fraud"].bg, "--cat-color": categoryColors["report-fraud"].color } as React.CSSProperties}>
+              <div className="mb-2"><CategoryIcon categoryId="report-fraud" /></div>
+              <p className="text-[11px] font-semibold text-gray-700 leading-tight">Report Fraud</p>
+            </Link>
+
+            {/* UPI Help — external link, full width */}
+            <a href="https://www.upihelp.npci.org.in/" target="_blank" rel="noopener noreferrer" className="group bento-card col-span-4 glass-card flex items-center justify-center gap-2.5 py-3 rounded-2xl transition-all cursor-pointer" style={{ "--cat-bg": categoryColors["upi-help"].bg, "--cat-color": categoryColors["upi-help"].color } as React.CSSProperties}>
+              <CategoryIcon categoryId="upi-help" />
+              <p className="text-xs font-semibold text-gray-700">UPI Help · Powered by NPCI</p>
             </a>
-            <Link
-              href="/category/report-fraud"
-              className="glass-card flex flex-col items-center p-5 rounded-2xl text-center transition-all cursor-pointer"
-            >
-              <div className="mb-3"><CategoryIcon categoryId="report-fraud" /></div>
-              <p className="text-xs font-semibold text-gray-800 leading-tight">Report Fraud</p>
-            </Link>
           </div>
         </section>
 
@@ -100,7 +170,7 @@ export default function Home() {
               <Link
                 key={cat.id}
                 href={`/category/${cat.id}`}
-                className="glass-card flex flex-col items-center p-5 rounded-2xl text-center transition-all cursor-pointer"
+                className="group glass-card flex flex-col items-center p-5 rounded-2xl text-center transition-all cursor-pointer"
               >
                 <div className="mb-3"><CategoryIcon categoryId={cat.id} /></div>
                 <p className="text-xs font-semibold text-gray-800 leading-tight">{cat.faqCategory}</p>

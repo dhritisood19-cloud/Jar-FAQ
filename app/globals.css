@@ -93,6 +93,36 @@ html {
   animation: pulse-dot 2s ease-in-out infinite;
 }
 
+/* Category icon: mono → color on hover/active */
+.cat-icon {
+  background-color: #F3F4F6;
+}
+
+.cat-icon svg {
+  fill: #9CA3AF;
+  transition: fill 0.2s ease;
+}
+
+.group:hover .cat-icon,
+.group:active .cat-icon {
+  background-color: var(--cat-bg);
+}
+
+.group:hover .cat-icon svg,
+.group:active .cat-icon svg {
+  fill: var(--cat-color);
+}
+
+/* Bento card subtle gradient on hover */
+.bento-card {
+  transition: background 0.25s ease, box-shadow 0.25s ease;
+}
+
+.bento-card:hover,
+.bento-card:active {
+  background: linear-gradient(135deg, var(--cat-bg) 0%, transparent 60%);
+}
+
 .border-glow {
   border: 1.5px solid rgba(124, 58, 237, 0.4);
   animation: border-glow-pulse 2s ease-in-out infinite;

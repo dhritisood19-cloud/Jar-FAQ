@@ -18,41 +18,41 @@ import DiamondOutlinedIcon from "@mui/icons-material/DiamondOutlined";
 import ReportProblemOutlinedIcon from "@mui/icons-material/ReportProblemOutlined";
 import LocalShippingOutlinedIcon from "@mui/icons-material/LocalShippingOutlined";
 import SupportAgentOutlinedIcon from "@mui/icons-material/SupportAgentOutlined";
+import { categoryColors } from "./categoryColors";
+
+const s = 20;
 
 const iconMap: Record<string, React.ReactNode> = {
-  jar: <SavingsOutlinedIcon sx={{ fontSize: 32, color: "#7C3AED" }} />,
-  "jar-gold": <WorkspacePremiumOutlinedIcon sx={{ fontSize: 32, color: "#F59E0B" }} />,
-  "jar-silver": <MonetizationOnOutlinedIcon sx={{ fontSize: 32, color: "#6B7280" }} />,
-  kyc: <VerifiedUserOutlinedIcon sx={{ fontSize: 32, color: "#10B981" }} />,
-  "upi-id": <CreditCardOutlinedIcon sx={{ fontSize: 32, color: "#3B82F6" }} />,
-  "payments-savings": <ReceiptLongOutlinedIcon sx={{ fontSize: 32, color: "#8B5CF6" }} />,
-  "autopay-subscription": <AutorenewOutlinedIcon sx={{ fontSize: 32, color: "#06B6D4" }} />,
-  withdrawal: <AccountBalanceOutlinedIcon sx={{ fontSize: 32, color: "#059669" }} />,
-  "refer-earn": <CardGiftcardOutlinedIcon sx={{ fontSize: 32, color: "#EF4444" }} />,
-  rewards: <EmojiEventsOutlinedIcon sx={{ fontSize: 32, color: "#F59E0B" }} />,
-  profile: <PersonOutlinedIcon sx={{ fontSize: 32, color: "#6366F1" }} />,
-  nominee: <GroupOutlinedIcon sx={{ fontSize: 32, color: "#7C3AED" }} />,
-  loans: <DescriptionOutlinedIcon sx={{ fontSize: 32, color: "#64748B" }} />,
-  "jar-pay": <SendOutlinedIcon sx={{ fontSize: 32, color: "#2563EB" }} />,
-  nek: <DiamondOutlinedIcon sx={{ fontSize: 32, color: "#EC4899" }} />,
-  "report-fraud": <ReportProblemOutlinedIcon sx={{ fontSize: 32, color: "#DC2626" }} />,
-  "nek-delivery": <LocalShippingOutlinedIcon sx={{ fontSize: 32, color: "#F97316" }} />,
-  "upi-help": <SupportAgentOutlinedIcon sx={{ fontSize: 32, color: "#0EA5E9" }} />,
+  jar:                    <SavingsOutlinedIcon sx={{ fontSize: s }} />,
+  "jar-gold":             <WorkspacePremiumOutlinedIcon sx={{ fontSize: s }} />,
+  "jar-silver":           <MonetizationOnOutlinedIcon sx={{ fontSize: s }} />,
+  kyc:                    <VerifiedUserOutlinedIcon sx={{ fontSize: s }} />,
+  "upi-id":               <CreditCardOutlinedIcon sx={{ fontSize: s }} />,
+  "payments-savings":     <ReceiptLongOutlinedIcon sx={{ fontSize: s }} />,
+  "autopay-subscription": <AutorenewOutlinedIcon sx={{ fontSize: s }} />,
+  withdrawal:             <AccountBalanceOutlinedIcon sx={{ fontSize: s }} />,
+  "refer-earn":           <CardGiftcardOutlinedIcon sx={{ fontSize: s }} />,
+  rewards:                <EmojiEventsOutlinedIcon sx={{ fontSize: s }} />,
+  profile:                <PersonOutlinedIcon sx={{ fontSize: s }} />,
+  nominee:                <GroupOutlinedIcon sx={{ fontSize: s }} />,
+  loans:                  <DescriptionOutlinedIcon sx={{ fontSize: s }} />,
+  "jar-pay":              <SendOutlinedIcon sx={{ fontSize: s }} />,
+  nek:                    <DiamondOutlinedIcon sx={{ fontSize: s }} />,
+  "report-fraud":         <ReportProblemOutlinedIcon sx={{ fontSize: s }} />,
+  "nek-delivery":         <LocalShippingOutlinedIcon sx={{ fontSize: s }} />,
+  "upi-help":             <SupportAgentOutlinedIcon sx={{ fontSize: s }} />,
 };
 
-export default function CategoryIcon({ categoryId, size = 32 }: { categoryId: string; size?: number }) {
-  const icon = iconMap[categoryId];
-  if (!icon) return <SavingsOutlinedIcon sx={{ fontSize: size, color: "#7C3AED" }} />;
+export default function CategoryIcon({ categoryId }: { categoryId: string }) {
+  const icon = iconMap[categoryId] || <SavingsOutlinedIcon sx={{ fontSize: s }} />;
+  const colors = categoryColors[categoryId] || { color: "#7C3AED", bg: "#F3F0FF" };
 
-  if (size !== 32) {
-    // Clone with different size
-    const entry = Object.entries(iconMap).find(([k]) => k === categoryId);
-    if (entry) {
-      const [, node] = entry;
-      // Re-render with custom size
-      return <span style={{ display: "inline-flex", transform: `scale(${size / 32})` }}>{node}</span>;
-    }
-  }
-
-  return <>{icon}</>;
+  return (
+    <div
+      className="cat-icon w-9 h-9 rounded-xl flex items-center justify-center transition-all duration-200"
+      style={{ "--cat-color": colors.color, "--cat-bg": colors.bg } as React.CSSProperties}
+    >
+      <span className="inline-flex">{icon}</span>
+    </div>
+  );
 }
