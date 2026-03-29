@@ -1,3 +1,5 @@
+import fs from "fs";
+import path from "path";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { faqData, findQuestionById, getRelatedQuestions } from "../../../data/faqData";
@@ -6,6 +8,102 @@ import FeedbackWidget from "../../../components/FeedbackWidget";
 import RichText from "../../../components/RichText";
 import { YouTubeEmbed, GifEmbed } from "../../../components/MediaEmbed";
 import { ChevronRightIcon, OpenInNewIcon, ChatBubbleOutlineIcon } from "../../../components/Icons";
+
+// Strip to alphanumeric only for fuzzy comparison
+function fuzzyNorm(s: string): string {
+  return s
+    .normalize("NFKD")
+    .replace(/[\u2018\u2019\u201C\u201D\u201E\u00AB\u00BB]/g, "")
+    .replace(/[^a-z0-9]/gi, "")
+    .toLowerCase();
+}
+
+// Common text variations between edited questions and original audio filenames
+const textAliases: Record<string, string[]> = {
+  "lose": ["loose"],
+  "losing": ["loosing"],
+  "saving plan": ["savings plans", "savings plan"],
+  "orders": ["order"],
+  "instantly": ["instanly"],
+  "appear": ["apprear"],
+  "completing": ["completeing"],
+  "i am being asked for kyc again. why": ["why am i being asked to do it again"],
+};
+
+function expandVariants(text: string): string[] {
+  const variants = [text];
+  const lower = text.toLowerCase();
+  for (const [edited, originals] of Object.entries(textAliases)) {
+    if (lower.includes(edited)) {
+      for (const orig of originals) {
+        variants.push(text.replace(new RegExp(edited, "gi"), orig));
+      }
+    }
+  }
+  return variants;
+}
+
+function findAudioFile(questionText: string): string | null {
+  const audioDir = path.join(process.cwd(), "public", "audio");
+  let files: string[];
+  try {
+    files = fs.readdirSync(audioDir).filter(f => f.endsWith(".mp3"));
+  } catch {
+    return null;
+  }
+
+  const normalize = (s: string) =>
+    s.replace(/[\/\?]/g, "_").toLowerCase().trim();
+
+  // Try exact match with variants
+  const variants = expandVariants(questionText);
+  for (const variant of variants) {
+    const nq = normalize(variant);
+    for (const file of files) {
+      if (normalize(file.slice(0, -4)) === nq) {
+        return `/audio/${encodeURIComponent(file)}`;
+      }
+    }
+  }
+
+  // Fuzzy match: strip to alphanumeric
+  const fuzzyQ = fuzzyNorm(questionText);
+  const fuzzyQNoSuffix = fuzzyNorm(questionText.replace(/\s*\([^)]+\)\s*$/, ""));
+  const fuzzyVariants = variants.map(v => fuzzyNorm(v));
+  const fuzzyVariantsNoSuffix = variants.map(v => fuzzyNorm(v.replace(/\s*\([^)]+\)\s*$/, "")));
+  const allFuzzy = [...new Set([...fuzzyVariants, ...fuzzyVariantsNoSuffix])];
+
+  let bestMatch: string | null = null;
+  let bestScore = 0;
+
+  for (const file of files) {
+    const fuzzyF = fuzzyNorm(file.slice(0, -4));
+
+    // Direct fuzzy match with any variant
+    for (const fq of allFuzzy) {
+      if (fuzzyF === fq) {
+        return `/audio/${encodeURIComponent(file)}`;
+      }
+    }
+
+    // Substring containment match
+    const shorter = fuzzyQ.length < fuzzyF.length ? fuzzyQ : fuzzyF;
+    const longer = fuzzyQ.length < fuzzyF.length ? fuzzyF : fuzzyQ;
+    if (shorter.length > 10 && longer.includes(shorter)) {
+      const score = shorter.length / longer.length;
+      if (score > bestScore && score > 0.6) {
+        bestScore = score;
+        bestMatch = file;
+      }
+    }
+  }
+
+  if (bestMatch) {
+    return `/audio/${encodeURIComponent(bestMatch)}`;
+  }
+
+  return null;
+}
 
 const PLACEHOLDER_VIDEO = "https://www.youtube.com/watch?v=2p5tgCAE4EI&t=4s";
 
@@ -31,8 +129,19 @@ export default async function AnswerPage({
   if (!found || found.category.id !== categorySlug) notFound();
 
   const { question, category, subcategory } = found;
-  const related = getRelatedQuestions(questionSlug, 4);
+
+  // Use explicit relatedQuestions if set, otherwise auto-find
+  const related = question.relatedQuestions?.length
+    ? question.relatedQuestions
+        .map((id) => {
+          const f = findQuestionById(id);
+          if (!f) return null;
+          return { ...f.question, categoryId: f.category.id, categoryName: f.category.faqPageHeader, subcategoryName: f.subcategory.name };
+        })
+        .filter(Boolean) as (ReturnType<typeof getRelatedQuestions>)
+    : getRelatedQuestions(questionSlug, 4);
   const contentType = question.faqContent || "Text Suffices";
+  const audioSrc = findAudioFile(question.question);
 
   return (
     <main className="flex-1">
@@ -52,7 +161,7 @@ export default async function AnswerPage({
       <div className="max-w-3xl mx-auto px-4 py-8">
         <h1 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">{question.question}</h1>
 
-        <div className="mb-6"><AudioPlayer /></div>
+        {audioSrc && <div className="mb-6"><AudioPlayer src={audioSrc} /></div>}
 
         {/* Answer */}
         <div className="rounded-2xl p-6 mb-6 bg-gray-50 border border-gray-100">

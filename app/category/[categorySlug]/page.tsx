@@ -19,7 +19,11 @@ export default async function CategoryPage({
   if (!category) notFound();
 
   if (category.subcategories.length === 1) {
-    redirect(`/category/${category.id}/sub/${category.subcategories[0].id}`);
+    const sub = category.subcategories[0];
+    if (sub.questions.length === 1) {
+      redirect(`/category/${category.id}/${sub.questions[0].id}`);
+    }
+    redirect(`/category/${category.id}/sub/${sub.id}`);
   }
 
   return (

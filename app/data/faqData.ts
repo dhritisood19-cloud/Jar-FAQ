@@ -337,7 +337,7 @@ export const faqData: FAQCategory[] = [
             id: "pause-daily-savings",
             question: "How do I Pause my Savings Plan? (Daily)",
             answer:
-              "To Pause your active savings plan:\n\n1. Open your Jar App.\n2. Tap on the **Profile** icon at the top left corner.\n3. Scroll down to the **Jar Gold** section. All active plans will be displayed here, with **Active** highlighted in green.\n4. Tap on the **Active Plan** to view details such as total savings, subscription amount, and total days invested under the latest plan.\n5. Scroll down to see the option to increase your savings.\n6. Further down, you'll find **Manage Savings**.\n7. Tap **Manage Savings** and tap **Pause** to pause your plan.\n8. Enter the days for which you want to Pause your plan.\n\nNote: Active will apprear only if you have active plan in your account. \"",
+              "To Pause your active savings plan:\n\n1. Open your Jar App.\n2. Tap on the **Profile** icon at the top left corner.\n3. Scroll down to the **Jar Gold** section. All active plans will be displayed here, with **Active** highlighted in green.\n4. Tap on the **Active Plan** to view details such as total savings, subscription amount, and total days invested under the latest plan.\n5. Scroll down to see the option to increase your savings.\n6. Further down, you'll find **Manage Savings**.\n7. Tap **Manage Savings** and tap **Pause** to pause your plan.\n8. Enter the days for which you want to Pause your plan.\n\nNote: Active will appear only if you have active plan in your account. \"",
             supportActionable: "In App Redirection",
             faqContent: "Text Suffices",
             deeplink: "https://www.myjar.app/",
@@ -346,7 +346,7 @@ export const faqData: FAQCategory[] = [
             id: "stop-daily-savings",
             question: "How do I Stop my Savings Plan? (Daily)",
             answer:
-              "To Stop your plan:\n\n1. Open your Jar App.\n2. Tap on the **Profile icon** at the top left corner.\n3. Scroll down to the **Jar Gold** section. All active plans will be displayed here, with **Active** highlighted in green.\n4. Tap on the **Active Plan** to view details such as total savings, subscription amount, and total days invested under the latest plan.\n5. Scroll down to see the option to increase your savings.\n6. Further down, you'll find **Manage Savings**.\n7. Tap **Manage Savings** and tap **Stop** to Stop your plan.\n8. Confirm by tapping on **Stop Savings**.\n\nNote: **Active** will apprear only if you have active plan in your account. Incase you want to Stop a **Paused Plan** you will see **Resume**.",
+              "To Stop your plan:\n\n1. Open your Jar App.\n2. Tap on the **Profile icon** at the top left corner.\n3. Scroll down to the **Jar Gold** section. All active plans will be displayed here, with **Active** highlighted in green.\n4. Tap on the **Active Plan** to view details such as total savings, subscription amount, and total days invested under the latest plan.\n5. Scroll down to see the option to increase your savings.\n6. Further down, you'll find **Manage Savings**.\n7. Tap **Manage Savings** and tap **Stop** to Stop your plan.\n8. Confirm by tapping on **Stop Savings**.\n\nNote: **Active** will appear only if you have active plan in your account. Incase you want to Stop a **Paused Plan** you will see **Resume**.",
             supportActionable: "In App Redirection",
             faqContent: "Text Suffices",
             deeplink: "https://www.myjar.app/",
@@ -421,7 +421,7 @@ export const faqData: FAQCategory[] = [
             id: "stop-weekly-savings",
             question: "How do I Stop my Savings Plan? (Weekly)",
             answer:
-              "To Stop your plan:\n\n1. Open your Jar App.\n2. Tap on the **Profile icon** at the top left corner.\n3. Scroll down to the **Jar Gold** section. All active plans will be displayed here, with **Active** highlighted in green.\n4. Tap on the **Active Plan** to view details such as total savings, subscription amount, and total days invested under the latest plan.\n5. Scroll down to see the option to increase your savings.\n6. Further down, you'll find **Disable Savings Plan**. Tap on it.\n7. Now, tap **Diable Savings Plan**.\n\nNote: **Active** will apprear only if you have active plan in your account. Incase you want to Stop a **Paused Plan** you will see **Resume**.",
+              "To Stop your plan:\n\n1. Open your Jar App.\n2. Tap on the **Profile icon** at the top left corner.\n3. Scroll down to the **Jar Gold** section. All active plans will be displayed here, with **Active** highlighted in green.\n4. Tap on the **Active Plan** to view details such as total savings, subscription amount, and total days invested under the latest plan.\n5. Scroll down to see the option to increase your savings.\n6. Further down, you'll find **Disable Savings Plan**. Tap on it.\n7. Now, tap **Diable Savings Plan**.\n\nNote: **Active** will appear only if you have active plan in your account. Incase you want to Stop a **Paused Plan** you will see **Resume**.",
             supportActionable: "In App Redirection",
             faqContent: "Text Suffices",
             deeplink: "https://www.myjar.app/",
@@ -487,7 +487,7 @@ export const faqData: FAQCategory[] = [
             id: "stop-monthly-savings",
             question: "How do I Stop my Savings Plan? (Monthly)",
             answer:
-              "To Stop your plan:\n\n1. Open your Jar App.\n2. Tap on the **Profile icon** at the top left corner.\n3. Scroll down to the **Jar Gold** section. All active plans will be displayed here, with **Active** highlighted in green.\n4. Tap on the **Active Plan** to view details such as total savings, subscription amount, and total days invested under the latest plan.\n5. Scroll down to see the option to increase your savings.\n6. Further down, you'll find **Disable Savings Plan**. Tap on it.\n7. Now, tap **Diable Savings Plan**.\n\nNote: **Active** will apprear only if you have active plan in your account. Incase you want to Stop a **Paused Plan** you will see **Resume**.",
+              "To Stop your plan:\n\n1. Open your Jar App.\n2. Tap on the **Profile icon** at the top left corner.\n3. Scroll down to the **Jar Gold** section. All active plans will be displayed here, with **Active** highlighted in green.\n4. Tap on the **Active Plan** to view details such as total savings, subscription amount, and total days invested under the latest plan.\n5. Scroll down to see the option to increase your savings.\n6. Further down, you'll find **Disable Savings Plan**. Tap on it.\n7. Now, tap **Diable Savings Plan**.\n\nNote: **Active** will appear only if you have active plan in your account. Incase you want to Stop a **Paused Plan** you will see **Resume**.",
             supportActionable: "In App Redirection",
             faqContent: "Text Suffices",
             deeplink: "https://www.myjar.app/",
@@ -932,7 +932,7 @@ export const faqData: FAQCategory[] = [
             id: "why-kyc",
             question: "Why should I do KYC/ID verification? Why is it necessary?",
             answer:
-              "KYC helps keep your **account** and **savings secure**. It allows us to verify your identity, prevent fraud, and protect your funds.\n\nCompleting KYC allows you to **withdraw more than ₹30** at a time. Additonally, with **PAN KYC**, you can save beyond **₹1.5 lakh** in a financial year.",
+              "KYC helps keep your **account** and **savings secure**. It allows us to verify your identity, prevent fraud, and protect your funds.\n\nCompleting KYC allows you to **withdraw more than ₹30** at a time. Additionally, with **PAN KYC**, you can save beyond **₹1.5 lakh** in a financial year.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -1413,7 +1413,7 @@ export const faqData: FAQCategory[] = [
           {
             id: "see-savings-plans",
             question:
-              "Where can I see the Savings Plans I have opted for on Jar?",
+              "Where can I see the Saving Plan I have opted for on Jar?",
             answer:
               "To view your active savings plans:\n\n1. Open your Jar App\n2. Scroll down to the **Gold Saving Plans** section\n\n**Note:** This section appears only if you have active plans in your account.\n\nHere, you can see the **savings plans** you are **enrolled in** and the **amount** you are investing regularly. You can also **increase** your savings by **updating** the investment amount according to your preference through this section.",
             supportActionable: "In App Redirection",
@@ -1423,9 +1423,9 @@ export const faqData: FAQCategory[] = [
           {
             id: "manage-savings-plans",
             question:
-              "How can I manage the Savings Plans I have active on Jar?",
+              "How can I manage the Saving Plan I have active on Jar?",
             answer:
-              "To manage your active plans:\n\n1. Open your Jar App.\n2. Tap on the **Profile** icon at the top left corner.\n3. Scroll down to the **Jar Gold** section. All active plans will be displayed here, with **Active** highlighted in **green**.\n4. Tap on the Active Plan to view details such as total savings, subscription amount, and total days invested under the latest plan.\n5. Scroll down to see the option to increase your savings.\n6. Further down, you'll find **Manage Savings**.\n7. Tap Manage Savings to **Pause** or **Stop** your plan as needed.\n\n**Note:** **Active** will apprear only if you have active plan in your account.",
+              "To manage your active plans:\n\n1. Open your Jar App.\n2. Tap on the **Profile** icon at the top left corner.\n3. Scroll down to the **Jar Gold** section. All active plans will be displayed here, with **Active** highlighted in **green**.\n4. Tap on the Active Plan to view details such as total savings, subscription amount, and total days invested under the latest plan.\n5. Scroll down to see the option to increase your savings.\n6. Further down, you'll find **Manage Savings**.\n7. Tap Manage Savings to **Pause** or **Stop** your plan as needed.\n\n**Note:** **Active** will appear only if you have active plan in your account.",
             supportActionable: "In App Redirection",
             faqContent: "Video",
             deeplink: "https://www.myjar.app/",
@@ -1440,7 +1440,7 @@ export const faqData: FAQCategory[] = [
             id: "how-pause-savings",
             question: "How do I Pause my Savings Plan?",
             answer:
-              "To Pause your active plan:\n\n1. Open your Jar App.\n2. Tap on the **Profile** icon at the top left corner.\n3. Scroll down to the **Jar Gold** section. All active plans will be displayed here, with **Active** highlighted in green.\n4. Tap on the Active Plan to view details such as total savings, subscription amount, and total days invested under the latest plan.\n5. Scroll down to see the option to increase your savings.\n6. Further down, you'll find **Manage Savings**.\n7. Tap Manage Savings and tap **Pause** to pause your plan.\n8. Enter the days for which you want to Pause your plan.\n\n**Note:** Active will apprear only if you have active plan in your account.",
+              "To Pause your active plan:\n\n1. Open your Jar App.\n2. Tap on the **Profile** icon at the top left corner.\n3. Scroll down to the **Jar Gold** section. All active plans will be displayed here, with **Active** highlighted in green.\n4. Tap on the Active Plan to view details such as total savings, subscription amount, and total days invested under the latest plan.\n5. Scroll down to see the option to increase your savings.\n6. Further down, you'll find **Manage Savings**.\n7. Tap Manage Savings and tap **Pause** to pause your plan.\n8. Enter the days for which you want to Pause your plan.\n\n**Note:** Active will appear only if you have active plan in your account.",
             supportActionable: "In App Redirection",
             faqContent: "Text Suffices",
             deeplink: "https://www.myjar.app/",
@@ -1463,7 +1463,7 @@ export const faqData: FAQCategory[] = [
             id: "resume-savings-plan",
             question: "How do I Resume my Savings Plan?",
             answer:
-              "To Resume your Paused plan:\n\n1. Open your Jar App.\n2. Tap on the **Profile** icon at the top left corner.\n3. Scroll down to the **Jar Gold** section. All Resumed plans will be displayed here, with **RESUME** highlighted.\n4. Tap on the **Resume** Plan to view details such as total savings, subscription amount, and total days invested under the latest plan.\n5. Scroll down to see **Manage Savings**.\n6. Tap **Manage Savings** and tap **Resume**. Your plan will be resumed.\n\n**Note:** Resume will apprear only if you have **Resumed** plan in your account.",
+              "To Resume your Paused plan:\n\n1. Open your Jar App.\n2. Tap on the **Profile** icon at the top left corner.\n3. Scroll down to the **Jar Gold** section. All Resumed plans will be displayed here, with **RESUME** highlighted.\n4. Tap on the **Resume** Plan to view details such as total savings, subscription amount, and total days invested under the latest plan.\n5. Scroll down to see **Manage Savings**.\n6. Tap **Manage Savings** and tap **Resume**. Your plan will be resumed.\n\n**Note:** Resume will appear only if you have **Resumed** plan in your account.",
             supportActionable: "In App Redirection",
             faqContent: "Text Suffices",
             deeplink: "https://www.myjar.app/",
@@ -1478,7 +1478,7 @@ export const faqData: FAQCategory[] = [
             id: "how-stop-savings",
             question: "How do I Stop my Savings Plan?",
             answer:
-              "To Stop your plan:\n\n1. Open your Jar App.\n2. Tap on the **Profile icon** at the top left corner.\n3. Scroll down to the **Jar Gold** section. All active plans will be displayed here, with **Active** highlighted in green.\n4. Tap on the **Active Plan** to view details such as total savings, subscription amount, and total days invested under the latest plan.\n5. Scroll down to see the option to increase your savings.\n6. Further down, you'll find **Manage Savings**.\n7. Tap **Manage Savings** and tap **Stop** to Stop your plan.\n8. Confirm by tapping on **Stop Savings**.\n\nNote: **Active** will apprear only if you have active plan in your account. Incase you want to Stop a **Paused Plan** you will see **Resume**.",
+              "To Stop your plan:\n\n1. Open your Jar App.\n2. Tap on the **Profile icon** at the top left corner.\n3. Scroll down to the **Jar Gold** section. All active plans will be displayed here, with **Active** highlighted in green.\n4. Tap on the **Active Plan** to view details such as total savings, subscription amount, and total days invested under the latest plan.\n5. Scroll down to see the option to increase your savings.\n6. Further down, you'll find **Manage Savings**.\n7. Tap **Manage Savings** and tap **Stop** to Stop your plan.\n8. Confirm by tapping on **Stop Savings**.\n\nNote: **Active** will appear only if you have active plan in your account. Incase you want to Stop a **Paused Plan** you will see **Resume**.",
             supportActionable: "In App Redirection",
             faqContent: "Text Suffices",
             deeplink: "https://www.myjar.app/",
@@ -2599,9 +2599,9 @@ export const faqData: FAQCategory[] = [
           },
           {
             id: "how-orders-delivered",
-            question: "How are Nek order delivered?",
+            question: "How are Nek orders delivered?",
             answer:
-              "Your Nek order will be delivered to your doorstep with utmost care. We partner with **trusted courier services** like BlueDart, DTDC, and India Post to ensure safe and secure delivery.\n\nYou can track your order in **real time**, and it will arrive within the **estimated delivery timeline**.",
+              "Your Nek order will be delivered to your doorstep with utmost care. We partner with **trusted courier services** like BlueDart, DTDC, and India Post etc. to ensure safe and secure delivery.\n\nYou can track your order in **real time**, and it will arrive within the **estimated delivery timeline**.",
             supportActionable: "Solved by FAQ",
             faqContent: "Text Suffices",
           },
@@ -2710,29 +2710,17 @@ export const faqData: FAQCategory[] = [
         name: "Fraud Reporting",
         questions: [
           {
-            id: "report-fraud-upi",
-            question:
-              "What should I do if the Primary UPI ID shown on my account is not recognized by me?",
+            id: "report-fraud-main",
+            question: "How do I report a suspected fraud on Jar?",
             answer:
-              "If you don't recognize the Primary UPI ID on your account, please contact support immediately and report it through the fraud reporting flow.",
+              "If you notice any suspicious activity on your Jar account, please report it immediately.\n\nTap **Contact Jar Support**\nOr write to us at **voc@changejar.in**.\n\nMake sure to include your registered mobile number and transaction details so we can assist you quickly.",
             supportActionable: "Support Required",
             faqContent: "Text Suffices",
-          },
-          {
-            id: "report-unauthorized-transaction",
-            question: "I see an unauthorized transaction on my account. What should I do?",
-            answer:
-              "If you notice any unauthorized transaction, please contact our support team immediately. Do not share your OTP, PIN, or password with anyone. Our team will investigate and help secure your account.",
-            supportActionable: "Support Required",
-            faqContent: "Text Suffices",
-          },
-          {
-            id: "report-suspicious-activity",
-            question: "How do I report suspicious activity on my Jar account?",
-            answer:
-              "If you notice any suspicious activity on your account, please reach out to our support team immediately through the app or contact us directly. We take fraud very seriously and will investigate promptly to protect your account.",
-            supportActionable: "Support Required",
-            faqContent: "Text Suffices",
+            relatedQuestions: [
+              "primary-upi-not-recognized",
+              "withdrawal-blocked",
+              "unknown-gold-purchases",
+            ],
           },
         ],
       },

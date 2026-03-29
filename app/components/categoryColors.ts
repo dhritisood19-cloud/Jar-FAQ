@@ -14,7 +14,7 @@ export const categoryColors: Record<string, { color: string; bg: string }> = {
   loans:                  { color: "#64748B", bg: "#F8FAFC" },
   "jar-pay":              { color: "#1D4ED8", bg: "#EFF6FF" },
   nek:                    { color: "#DB2777", bg: "#FDF2F8" },
-  "report-fraud":         { color: "#B91C1C", bg: "#FEF2F2" },
+  "report-fraud":         { color: "#7C3AED", bg: "#F3F0FF" },
   "nek-delivery":         { color: "#EA580C", bg: "#FFF7ED" },
   "upi-help":             { color: "#0284C7", bg: "#F0F9FF" },
 };

@@ -6,10 +6,14 @@ import Image from "next/image";
 import LanguageIcon from "@mui/icons-material/Language";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { supportedLanguages } from "../data/faqData";
+import { useLocale } from "./LocaleContext";
+import { uiStrings } from "../data/uiStrings";
 
 export default function Header() {
   const [langOpen, setLangOpen] = useState(false);
-  const [selectedLang, setSelectedLang] = useState(supportedLanguages[0]);
+  const { locale, setLocale } = useLocale();
+  const selectedLang = supportedLanguages.find((l) => l.code === locale) || supportedLanguages[0];
+  const t = uiStrings[locale];
 
   return (
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
@@ -17,7 +21,7 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-2">
           <Image src="/jar-logo.png" alt="Jar" width={34} height={34} className="rounded-lg" />
           <span className="text-base font-bold text-gray-900">Jar</span>
-          <span className="text-xs font-medium ml-0.5 text-gray-400">Help Center</span>
+          <span className="text-xs font-medium ml-0.5 text-gray-400">{t.helpCenter}</span>
         </Link>
 
         <div className="relative">
@@ -36,9 +40,9 @@ export default function Header() {
                 {supportedLanguages.map((lang) => (
                   <button
                     key={lang.code}
-                    onClick={() => { setSelectedLang(lang); setLangOpen(false); }}
+                    onClick={() => { setLocale(lang.code as "en" | "hi"); setLangOpen(false); }}
                     className={`w-full text-left px-4 py-2.5 text-sm flex items-center justify-between transition-colors hover:bg-gray-50 ${
-                      selectedLang.code === lang.code ? "text-violet-600 bg-violet-50 font-medium" : "text-gray-700"
+                      locale === lang.code ? "text-violet-600 bg-violet-50 font-medium" : "text-gray-700"
                     }`}
                   >
                     <span>{lang.nativeName}</span>

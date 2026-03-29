@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { faqData } from "../../../../data/faqData";
 import SearchBar from "../../../../components/SearchBar";
 import { ChevronRightIcon, HelpOutlineIcon } from "../../../../components/Icons";
@@ -24,6 +24,10 @@ export default async function SubCategoryPage({
   if (!category) notFound();
   const subcategory = category.subcategories.find((s) => s.id === subSlug);
   if (!subcategory) notFound();
+
+  if (subcategory.questions.length === 1) {
+    redirect(`/category/${category.id}/${subcategory.questions[0].id}`);
+  }
 
   return (
     <main className="flex-1">

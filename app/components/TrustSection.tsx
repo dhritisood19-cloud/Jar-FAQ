@@ -16,6 +16,9 @@ import ReceiptLongIcon from "@mui/icons-material/ReceiptLong";
 import TokenIcon from "@mui/icons-material/Token";
 import RocketLaunchIcon from "@mui/icons-material/RocketLaunch";
 import CloseIcon from "@mui/icons-material/Close";
+import { useLocale } from "./LocaleContext";
+import { uiStrings } from "../data/uiStrings";
+import { trustItemsHi, categoryLabelsHi } from "./TrustSection.hi";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
@@ -172,8 +175,20 @@ export default function TrustSection() {
   const [isOpen, setIsOpen] = useState(false);
   const [expandedId, setExpandedId] = useState<string | null>(null);
   const [activeCategory, setActiveCategory] = useState<string>("safety");
+  const { locale } = useLocale();
+  const t = uiStrings[locale];
 
-  const filteredItems = trustItems.filter(
+  const catLabels = locale === "hi" ? categoryLabelsHi : categoryLabels;
+
+  // Merge Hindi text with English icons
+  const items: TrustItem[] = locale === "hi"
+    ? trustItems.map((en) => {
+        const hi = trustItemsHi.find((h) => h.id === en.id);
+        return hi ? { ...en, title: hi.title, answer: hi.answer } : en;
+      })
+    : trustItems;
+
+  const filteredItems = items.filter(
     (item) => item.category === activeCategory
   );
 
@@ -194,7 +209,7 @@ export default function TrustSection() {
                 <SecurityIcon style={{ fontSize: 18 }} />
               </div>
               <h3 className="text-sm font-bold">
-                User Trust = Our Priority
+                {t.trustHeader}
               </h3>
             </div>
             <ChevronRightIcon
@@ -217,7 +232,7 @@ export default function TrustSection() {
                 style={{ fontSize: 18, color: "#5B21B6" }}
               />
               <h3 className="text-sm font-bold text-gray-900">
-                Trust & Safety at Jar
+                {t.trustSubHeader}
               </h3>
             </div>
             <button
@@ -248,7 +263,7 @@ export default function TrustSection() {
                     : undefined
                 }
               >
-                {categoryLabels[cat]}
+                {catLabels[cat]}
               </button>
             ))}
           </div>
