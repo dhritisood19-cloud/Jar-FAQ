@@ -1266,7 +1266,7 @@ export const faqData: FAQCategory[] = [
   },
   {
     id: "payments-savings",
-    faqCategory: "Payments/ Savings",
+    faqCategory: "Payments & Statements",
     faqPageHeader: "Payments & Statements",
     icon: "📱",
     subcategories: [
