@@ -20,7 +20,7 @@ import LocalShippingOutlinedIcon from "@mui/icons-material/LocalShippingOutlined
 import SupportAgentOutlinedIcon from "@mui/icons-material/SupportAgentOutlined";
 import { categoryColors } from "./categoryColors";
 
-const s = 20;
+const s = 24;
 
 const iconMap: Record<string, React.ReactNode> = {
   jar:                    <SavingsOutlinedIcon sx={{ fontSize: s }} />,
@@ -49,7 +49,7 @@ export default function CategoryIcon({ categoryId }: { categoryId: string }) {
 
   return (
     <div
-      className="cat-icon w-9 h-9 rounded-xl flex items-center justify-center transition-all duration-200"
+      className="cat-icon w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-200"
       style={{ "--cat-color": colors.color, "--cat-bg": colors.bg } as React.CSSProperties}
     >
       <span className="inline-flex">{icon}</span>

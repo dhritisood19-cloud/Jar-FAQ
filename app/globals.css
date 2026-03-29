@@ -36,14 +36,13 @@ html {
 /* Glass card - light theme */
 .glass-card {
   background: #F8F7FC;
-  border: 1px solid #E8E5F0;
+  border: 1px solid #EEEBF5;
+  box-shadow: none;
 }
 
 .glass-card:hover {
-  background: #F3F0FA;
-  border-color: #7C3AED;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.08);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
 }
 
 /* Auto scroll animation */
@@ -94,18 +93,22 @@ html {
 }
 
 /* Category icon: mono → color on hover/active */
+/* Icon: purple tint on small cards, category tint on wide */
 .cat-icon {
-  background-color: #F3F4F6;
+  background-color: #F0EBFA;
+}
+
+.bento-card-wide .cat-icon {
+  background-color: var(--cat-bg);
 }
 
 .cat-icon svg {
-  fill: #9CA3AF;
+  fill: #8B7AB8;
   transition: fill 0.2s ease;
 }
 
-.group:hover .cat-icon,
-.group:active .cat-icon {
-  background-color: var(--cat-bg);
+.bento-card-wide .cat-icon svg {
+  fill: var(--cat-color);
 }
 
 .group:hover .cat-icon svg,
@@ -113,14 +116,14 @@ html {
   fill: var(--cat-color);
 }
 
-/* Bento card subtle gradient on hover */
+/* Bento card gradient — only on wide cards */
 .bento-card {
-  transition: background 0.25s ease, box-shadow 0.25s ease;
+  transition: box-shadow 0.25s ease;
 }
 
-.bento-card:hover,
-.bento-card:active {
-  background: linear-gradient(135deg, var(--cat-bg) 0%, transparent 60%);
+.bento-card-wide {
+  background: linear-gradient(135deg, var(--cat-bg) 0%, var(--cat-bg) 30%, transparent 80%);
+  border: 1px solid #EEEBF5;
 }
 
 .border-glow {

@@ -789,7 +789,7 @@ export const faqData: FAQCategory[] = [
             question:
               "Why is my silver purchase pending even after a successful payment?",
             answer:
-              "We are apologe for the delay. This can occasionally happen due to a partner-side issue. Don't worry, your money is safe with us.\n\nWe're actively retrying, and your purchase should reflect in the locker within **24–72 hours**. You can also tap **Troubleshoot** to instantly recheck the status.",
+              "We apologise for the delay. This can occasionally happen due to a partner-side issue. Don't worry, your money is safe with us.\n\nWe're actively retrying, and your purchase should reflect in the locker within **24–72 hours**. You can also tap **Troubleshoot** to instantly recheck the status.",
             supportActionable: "Through In App Troubleshooting",
             faqContent: "GIF",
             deeplink: "https://www.myjar.app/",
@@ -889,7 +889,7 @@ export const faqData: FAQCategory[] = [
             question:
               "Why is my withdrawal still in progress even though the silver has been deducted from my locker?",
             answer:
-              "We are apologe for the delay. This can occasionally happen due to server issues with your bank. Don't worry, your money is safe.\n\nWe're actively retrying, and your withdrawn amount should reflect in your bank account within **48-72 hours**. You can also tap **Troubleshoot** to instantly recheck the status.",
+              "We apologise for the delay. This can occasionally happen due to server issues with your bank. Don't worry, your money is safe.\n\nWe're actively retrying, and your withdrawn amount should reflect in your bank account within **48-72 hours**. You can also tap **Troubleshoot** to instantly recheck the status.",
             supportActionable: "Through In App Troubleshooting",
             faqContent: "GIF",
             deeplink: "https://www.myjar.app/",
@@ -1279,7 +1279,7 @@ export const faqData: FAQCategory[] = [
             question:
               "Why is my gold purchase still pending even though the payment was successful?",
             answer:
-              "We are apologe for the delay. This can occasionally happen due to a partner-side issue. Don't worry, your money is safe with us.\n\nWe're actively retrying, and your purchase should reflect in the locker within **24–72 hours**. You can also tap **Troubleshoot** to instantly recheck the status.",
+              "We apologise for the delay. This can occasionally happen due to a partner-side issue. Don't worry, your money is safe with us.\n\nWe're actively retrying, and your purchase should reflect in the locker within **24–72 hours**. You can also tap **Troubleshoot** to instantly recheck the status.",
             supportActionable: "Through In App Troubleshooting",
             faqContent: "Video",
             deeplink: "https://www.myjar.app/",
@@ -1585,7 +1585,7 @@ export const faqData: FAQCategory[] = [
             question:
               "Why is my withdrawal still in progress even though the gold has already been deducted from my locker?",
             answer:
-              "We are apologe for the delay. This can occasionally happen due to server issues with your bank. Don't worry, your money is safe.\n\nWe're actively retrying, and your withdrawn amount should reflect in your bank account within **24 hours**. You can also tap **Troubleshoot** to instantly recheck the status.\n\nIf your bank is unable to process the payment within 24 hours, we will reverse the withdrawn quantity back to your Jar savings.",
+              "We apologise for the delay. This can occasionally happen due to server issues with your bank. Don't worry, your money is safe.\n\nWe're actively retrying, and your withdrawn amount should reflect in your bank account within **24 hours**. You can also tap **Troubleshoot** to instantly recheck the status.\n\nIf your bank is unable to process the payment within 24 hours, we will reverse the withdrawn quantity back to your Jar savings.",
             supportActionable: "Through In App Troubleshooting",
             faqContent: "Video",
             deeplink: "https://www.myjar.app/",
@@ -2830,12 +2830,6 @@ export const helpVideos = [
 export const supportedLanguages = [
   { code: "en", name: "English", nativeName: "English" },
   { code: "hi", name: "Hindi", nativeName: "हिन्दी" },
-  { code: "ta", name: "Tamil", nativeName: "தமிழ்" },
-  { code: "te", name: "Telugu", nativeName: "తెలుగు" },
-  { code: "kn", name: "Kannada", nativeName: "ಕನ್ನಡ" },
-  { code: "gu", name: "Gujarati", nativeName: "ગુજરાતી" },
-  { code: "mr", name: "Marathi", nativeName: "मराठी" },
-  { code: "bn", name: "Bengali", nativeName: "বাংলা" },
 ];
 
 // Helper: get all questions flat

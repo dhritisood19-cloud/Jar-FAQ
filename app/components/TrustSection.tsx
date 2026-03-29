@@ -186,7 +186,7 @@ export default function TrustSection() {
       >
         <div
           className="relative rounded-xl px-4 py-3 text-white overflow-hidden transition-all hover:shadow-lg"
-          style={{ background: "#3D1D72" }}
+          style={{ background: "#5F259F" }}
         >
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2.5">

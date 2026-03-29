@@ -36,7 +36,7 @@ export default function TroubleshootingEntry() {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className="rounded-2xl bg-red-50/50 border border-red-100 overflow-hidden">
+    <div className="rounded-2xl bg-white border border-red-100 overflow-hidden">
       {/* Header */}
       <button
         onClick={() => setExpanded(!expanded)}
