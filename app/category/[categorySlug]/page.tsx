@@ -4,6 +4,7 @@ import { faqData, findCategoryById } from "../../data/faqData";
 import SearchBar from "../../components/SearchBar";
 import { ChevronRightIcon } from "../../components/Icons";
 import CategoryIcon from "../../components/CategoryIcon";
+import { LocaleCategoryName, LocaleCategoryHeader, LocaleSubcategoryName, LocaleQuestionText } from "../../components/LocaleText";
 
 export function generateStaticParams() {
   return faqData.map((cat) => ({ categorySlug: cat.id }));
@@ -34,12 +35,12 @@ export default async function CategoryPage({
           <nav className="flex items-center gap-1 text-sm mb-5 text-gray-400">
             <Link href="/" className="hover:text-violet-600 transition-colors">Home</Link>
             <ChevronRightIcon sx={{ fontSize: 16 }} />
-            <span className="text-gray-700 font-medium">{category.faqCategory}</span>
+            <span className="text-gray-700 font-medium"><LocaleCategoryName categoryId={category.id} english={category.faqCategory} /></span>
           </nav>
           <div className="flex items-center gap-3 mb-5">
             <CategoryIcon categoryId={category.id} />
             <div>
-              <h1 className="text-xl sm:text-2xl font-bold text-gray-900">{category.faqPageHeader}</h1>
+              <LocaleCategoryHeader categoryId={category.id} english={category.faqPageHeader} className="text-xl sm:text-2xl font-bold text-gray-900" />
             </div>
           </div>
           <SearchBar compact placeholder={`Search in ${category.faqCategory}...`} />
@@ -55,16 +56,14 @@ export default async function CategoryPage({
               className="glass-card rounded-2xl p-5 transition-all cursor-pointer group"
             >
               <div className="flex items-center justify-between mb-3">
-                <h3 className="text-sm font-bold text-gray-800 group-hover:text-violet-600 transition-colors">
-                  {sub.name}
-                </h3>
+                <LocaleSubcategoryName subcategoryId={sub.id} english={sub.name} as="h3" className="text-sm font-bold text-gray-800 group-hover:text-violet-600 transition-colors" />
                 <ChevronRightIcon sx={{ fontSize: 18, color: "#9CA3AF" }} className="group-hover:translate-x-1 transition-transform" />
               </div>
               <div className="space-y-1.5">
                 {sub.questions.slice(0, 2).map((q) => (
                   <div key={q.id} className="flex items-start gap-2">
                     <div className="w-1 h-1 rounded-full mt-1.5 flex-shrink-0 bg-violet-300" />
-                    <p className="text-xs text-gray-500 line-clamp-1">{q.question}</p>
+                    <LocaleQuestionText questionId={q.id} english={q.question} className="text-xs text-gray-500 line-clamp-1" />
                   </div>
                 ))}
                 {sub.questions.length > 2 && (

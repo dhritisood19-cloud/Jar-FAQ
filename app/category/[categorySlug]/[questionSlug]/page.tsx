@@ -5,9 +5,10 @@ import { notFound } from "next/navigation";
 import { faqData, findQuestionById, getRelatedQuestions } from "../../../data/faqData";
 import AudioPlayer from "../../../components/AudioPlayer";
 import FeedbackWidget from "../../../components/FeedbackWidget";
-import RichText from "../../../components/RichText";
 import { YouTubeEmbed, GifEmbed } from "../../../components/MediaEmbed";
 import { ChevronRightIcon, OpenInNewIcon, ChatBubbleOutlineIcon } from "../../../components/Icons";
+import { LocaleQuestionTitle, LocaleQuestionText, LocaleCategoryName } from "../../../components/LocaleText";
+import LocaleAnswer from "../../../components/LocaleAnswer";
 
 // Strip to alphanumeric only for fuzzy comparison
 function fuzzyNorm(s: string): string {
@@ -151,7 +152,7 @@ export default async function AnswerPage({
           <nav className="flex items-center gap-1 text-xs flex-wrap text-gray-400">
             <Link href="/" className="hover:text-violet-600 transition-colors">Home</Link>
             <ChevronRightIcon sx={{ fontSize: 14 }} />
-            <Link href={`/category/${category.id}`} className="hover:text-violet-600 transition-colors">{category.faqCategory}</Link>
+            <Link href={`/category/${category.id}`} className="hover:text-violet-600 transition-colors"><LocaleCategoryName categoryId={category.id} english={category.faqCategory} /></Link>
             <ChevronRightIcon sx={{ fontSize: 14 }} />
             <span className="text-gray-500">{subcategory.name}</span>
           </nav>
@@ -159,14 +160,14 @@ export default async function AnswerPage({
       </div>
 
       <div className="max-w-3xl mx-auto px-4 py-8">
-        <h1 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">{question.question}</h1>
+        <LocaleQuestionTitle questionId={question.id} english={question.question} className="text-xl sm:text-2xl font-bold text-gray-900 mb-6" />
 
         {audioSrc && <div className="mb-6"><AudioPlayer src={audioSrc} /></div>}
 
         {/* Answer */}
         <div className="rounded-2xl p-6 mb-6 bg-gray-50 border border-gray-100">
           <div className="text-sm leading-relaxed whitespace-pre-line text-gray-700">
-            <RichText text={question.answer} />
+            <LocaleAnswer questionId={question.id} englishAnswer={question.answer} />
           </div>
         </div>
 
@@ -209,7 +210,7 @@ export default async function AnswerPage({
             <div className="space-y-2">
               {related.map((rq) => (
                 <Link key={rq.id} href={`/category/${rq.categoryId}/${rq.id}`} className="flex items-center justify-between p-4 rounded-xl bg-white border border-gray-100 hover:border-violet-200 hover:shadow-sm transition-all group">
-                  <span className="text-sm text-gray-700 group-hover:text-violet-600 transition-colors line-clamp-2">{rq.question}</span>
+                  <LocaleQuestionText questionId={rq.id} english={rq.question} className="text-sm text-gray-700 group-hover:text-violet-600 transition-colors line-clamp-2" />
                   <ChevronRightIcon sx={{ fontSize: 18, color: "#9CA3AF" }} className="flex-shrink-0 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Link>
               ))}
